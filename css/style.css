@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 
-.overflow-hidden {
-    overflow: hidden;
+html {
+    overflow-x: hidden;
 }
 
 /* Index Page CSS: Starts */
@@ -30,5 +30,6 @@
     text-align: center;
     padding: 30px;
 }
+
 
 /* Index Page CSS: Ends */
