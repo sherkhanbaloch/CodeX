@@ -34,3 +34,7 @@ html {
 
 
 /* Index Page CSS: Ends */
+
+ul, ol{
+    list-style-position: inside;
+}

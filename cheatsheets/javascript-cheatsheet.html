@@ -130,7 +130,7 @@
 
                 <div class="container">
                     <h1 class="h2">JavaScript (JS)</h1>
-                    <section id="introduction">
+                    <section class="my-3" id="introduction">
                         <h2>Introduction:</h2>
                         <p>
                             JavaScript is the most popuplar language in the world for the web. We
@@ -168,28 +168,28 @@ document.Write("&lt;i&gt; &lt;b&gt; Second Line &lt;/b&gt; of JavaScript &lt;/i&
 </code></pre>
                     </section>
 
-                    <section id="comments">
-                        <h3>Comments in JavaScript</h3>
+                    <section class="my-3" id="comments">
+                        <h3>1. Comments in JavaScript</h3>
                         <pre class="language-js"><code>// Single Line Comment
 /* This is Multi 
 Line Comment */</code></pre>
                     </section>
 
-                    <section id="varibales">
-                        <h3>Variables in JavaScript:</h3>
+                    <section class="my-3" id="varibales">
+                        <h3>2. Variables in JavaScript:</h3>
                         <p>
                             Variable are used to store Data, such as Container. Variable is a name
                             of a Storage Location.
                         </p>
                         <pre class="language-js"><code>// Initialization
-var myName = "Afaque Jaan";
+var myName = "Sher Khan Baloch";
 var myAge = 18;
         
 // Declare
 var myName, myAge;
         
 // Assign Later
-myName = "Afaque Jaan";
+myName = "Sher Khan Baloch";
 myAge = 18;
         
 document.write(myName + myAge);</code></pre>
@@ -211,15 +211,15 @@ document.write(myName + myAge);</code></pre>
                         </p>
                     </section>
 
-                    <section id="data-types">
-                        <h3>Data Types in JavaScript</h3>
+                    <section class="my-3" id="data-types">
+                        <h3>3. Data Types in JavaScript</h3>
                         <p>There are two types of Data Types.</p>
                         <p>
                             1. Primitive Data Types: String, Number, Boolean, Null, Undefined.
                         </p>
                         <p>2. Non-Primitive Data Types: Object, Array.</p>
                         <pre class="language-js"><code>// Primitive Data Types:
-var Name = "Afaque Jaan";
+var Name = "Sher Khan Baloch";
 document.write(typeof Name);
         
 var Age = 18;
@@ -239,14 +239,14 @@ var countries = ["Pakistan", "India", "China", "USA", "Germany"];
 document.write(typeof countries);
                 
 var Student = {
-    Name = "Afaque Jaan",
+    Name = "Sher Khan Baloch",
     Age = 18
 };
 document.write(typeof Student);</code></pre>
                     </section>
 
-                    <section id="operators">
-                        <h3>Operators:</h3>
+                    <section class="my-3" id="operators">
+                        <h3>4. Operators:</h3>
                         <p>Operator is a symbol that is used to perform operations according to user requirement. We can
                             perform
                             this in variables or values</p>
@@ -351,8 +351,8 @@ var drive = age >= 18 ? 'You Can Drive' : 'You Cannot Drive';
 console.log(drive);</code></pre>
                     </section>
 
-                    <section id="if-else">
-                        <h3>Conditions In JavaScript</h3>
+                    <section class="my-3" id="if-else">
+                        <h3>5. Conditions In JavaScript</h3>
                         <h3>1. If, If Else, If Else If Statement</h3>
                         <pre class="language-js"><code>// 1. If Statement
 var x = 5;
@@ -397,7 +397,7 @@ else {
 }</code></pre>
                     </section>
 
-                    <section id="switch-case">
+                    <section class="my-3" id="switch-case">
                         <h3>2. Switch Case</h3>
                         <pre class="language-js"><code>// Exmaple One:
 var day = 1;
@@ -440,8 +440,8 @@ switch (true) {
 }</code></pre>
                     </section>
 
-                    <section id="alert-box">
-                        <h3>Alert Box in JavaScript</h3>
+                    <section class="my-3" id="alert-box">
+                        <h3>6. Alert Box in JavaScript</h3>
                         <pre class="language-js"><code>// Simple Alert Box
 alert("This Is Simple Alert Box.")
         
@@ -456,8 +456,8 @@ else {
 }</code></pre>
                     </section>
 
-                    <section id="confirm-box">
-                        <h3>Confirm Box in JavaScript</h3>
+                    <section class="my-3" id="confirm-box">
+                        <h3>7. Confirm Box in JavaScript</h3>
                         <pre class="language-js"><code>// Simple Confirm Box
 confirm("Do you like our website?");
             
@@ -471,8 +471,8 @@ else {
 }</code></pre>
                     </section>
 
-                    <section id="prompt-box">
-                        <h3>Prompt Box in JavaScript</h3>
+                    <section class="my-3" id="prompt-box">
+                        <h3>8. Prompt Box in JavaScript</h3>
                         <pre class="language-js"><code>// Simple Prompt Box
 prompt("What Is Your Name?");
         
@@ -509,11 +509,11 @@ switch (true) {
 }</code></pre>
                     </section>
 
-                    <section id="functions">
-                        <h3>Functions in JavaScript</h3>
+                    <section class="my-3" id="functions">
+                        <h3>9. Functions in JavaScript</h3>
                         <pre class="language-js"><code>// Creating Function
 function myIntro() {
-    document.write("Hello World! I am Afaque Buledi.");
+    document.write("Hello World! I am Sher Khan Baloch.");
     document.write("&lt;/b&gt;");
     document.write("Sottware & Web Developer.");
 }
@@ -527,7 +527,7 @@ myIntro();
 function fullName(firstName, lastName) {
     console.log('Hello ' + firstName + ' ' + lastName);
 }
-fullName('Afaque', 'Buledi');
+fullName('Sher Khan', 'Baloch');
         
 // Example Two:
 function sum(num1, num2) {
@@ -536,7 +536,7 @@ function sum(num1, num2) {
 sum(3, 5);
         
 // Setting Default Names If User Don't Give Any Value
-function fullName(firstName = 'Afaque', lastName = 'Buledi') {
+function fullName(firstName = 'Sher Khan', lastName = 'Baloch') {
     console.log('Hello ' + firstName + ' ' + lastName);
 }
 fullName();
@@ -548,7 +548,7 @@ function fullName(firstName, lastName) {
     var a = 'Hello ' + firstName + ' ' + lastName;
     return a;
 }
-var b = fullName('Afaque', 'Buledi');
+var b = fullName('Sher Khan', 'Baloch');
 console.log(b);
         
 // Example Two:
@@ -568,8 +568,8 @@ console.log(printPercentage + ' %');
 </code></pre>
                     </section>
 
-                    <section id="global-variables">
-                        <h3>Global and Local Varibale in JavaScript</h3>
+                    <section class="my-3" id="global-variables">
+                        <h3>10. Global and Local Varibale in JavaScript</h3>
                         <pre
                             class="language-js"><code>// Global Varibale declare outside the function. 
 var global = 'This is Global Varibale';
@@ -587,8 +587,8 @@ abc();
 // Note: Global Varibale Can Be Used In Any Function, But Local Varible Cannnot be used outside of function.</code></pre>
                     </section>
 
-                    <section id="mouse-events">
-                        <h3>Mouse Events In JavaScript</h3>
+                    <section class="my-3" id="mouse-events">
+                        <h3>11. Mouse Events In JavaScript</h3>
                         <pre class="language-html"><code>&lt;div id="box" onclick="func()"&gt;&lt;/div&gt; &lt;!-- Left Click Event. --&gt;
         
 &lt;div id="box" oncontextmenu="func()"&gt;&lt;/div&gt; &lt;!-- Right Click Event. --&gt;
@@ -610,8 +610,8 @@ function func() {
 &lt;/script&gt;</code></pre>
                     </section>
 
-                    <section id="keyboard-events">
-                        <h3>Keyboard Events In JavaScript</h3>
+                    <section class="my-3" id="keyboard-events">
+                        <h3>12. Keyboard Events In JavaScript</h3>
                         <pre class="language-html"><code>&lt;div id="form"&gt;
     &lt;!-- Example One: --&gt;
     &lt;input type="text" onkeydown="alert(this.value);"&gt;
@@ -631,8 +631,8 @@ function func() {
 &lt;/div&gt;</code></pre>
                     </section>
 
-                    <section id="windows-events">
-                        <h3>Windows Events In JavaScript</h3>
+                    <section class="my-3" id="windows-events">
+                        <h3>13. Windows Events In JavaScript</h3>
                         <pre class="language-html"><code>&lt;button onclick="openWindow()"&gt;Open Window&lt;/button&gt;
         
 &lt;button onclick="closeWindow()"&gt;Close Window&lt;/button&gt;
