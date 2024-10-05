@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HTML Cheatsheet - CodeX</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/prism.css">
+
+    <!-- Side Menu CSS -->
+    <link href="../css/styles.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        crossorigin="anonymous"></script>
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="../images/fly.png" type="image/x-icon">
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../images/fly.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            CodeX</a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar-->
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">HTML Tags</div>
+                        <a class="nav-link active" href="#introduction">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Introduction
+                        </a>
+                        <a class="nav-link active" href="#comment">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Comment Tag
+                        </a>
+                        <a class="nav-link active" href="#anchor">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Anchor Tag
+                        </a>
+                        <a class="nav-link active" href="#abbr">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Abbr Tag
+                        </a>
+                        <a class="nav-link active" href="#acronym">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Acronym Tag
+                        </a>
+                        <a class="nav-link active" href="#address">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Address Tag
+                        </a>
+                        <a class="nav-link active" href="#article">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Article Tag
+                        </a>
+                        <a class="nav-link active" href="#area">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Area Tag
+                        </a>
+                        <a class="nav-link active" href="#aside">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Aside Tag
+                        </a>
+                        <a class="nav-link active" href="#audio">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Audio Tag
+                        </a>
+                        <a class="nav-link active" href="#bold">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Bold Tag
+                        </a>
+                        <a class="nav-link active" href="#base">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Base Tag
+                        </a>
+                        <a class="nav-link active" href="#bdo">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Bdo Tag
+                        </a>
+                        <a class="nav-link active" href="#blockquote">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Blockquote Tag
+                        </a>
+                        <a class="nav-link active" href="#body">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Body Tag
+                        </a>
+                        <a class="nav-link active" href="#button">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Button Tag
+                        </a>
+                        <a class="nav-link active" href="#caption">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Caption Tag
+                        </a>
+                        <a class="nav-link active" href="#cite">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Cite Tag
+                        </a>
+                        <a class="nav-link active" href="#code">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Code Tag
+                        </a>
+                        <a class="nav-link active" href="#col">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Col Tag
+                        </a>
+                        <a class="nav-link active" href="#colgroup">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Colgroup Tag
+                        </a>
+                        <a class="nav-link active" href="#data">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Data Tag
+                        </a>
+                        <a class="nav-link active" href="#datalist">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Datalist Tag
+                        </a>
+                        <a class="nav-link active" href="#dd">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            DD Tag
+                        </a>
+                        <a class="nav-link active" href="#del">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Del Tag
+                        </a>
+                        <a class="nav-link active" href="#details">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Details, Summary Tag
+                        </a>
+                        <a class="nav-link active" href="#dfn">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            DFN Tag
+                        </a>
+                        <a class="nav-link active" href="#dialog">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Dialog Tag
+                        </a>
+                        <a class="nav-link active" href="#div">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Div Tag
+                        </a>
+                        <a class="nav-link active" href="#IEM">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            I, EM Tag
+                        </a>
+                        <a class="nav-link active" href="#embed">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Embed Tag
+                        </a>
+                        <a class="nav-link active" href="#fieldset">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Fieldset, Legend Tag
+                        </a>
+                        <a class="nav-link active" href="#figure">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Figure, Figcaption Tag
+                        </a>
+                        <a class="nav-link active" href="#footer">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Footer Tag
+                        </a>
+                        <a class="nav-link active" href="#form">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Form Tag
+                        </a>
+                        <a class="nav-link active" href="#header">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Header Tag
+                        </a>
+                        <a class="nav-link active" href="#hr">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            HR Tag
+                        </a>
+                        <a class="nav-link active" href="#iframe">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            iFrame, Sandbox Tag
+                        </a>
+                        <a class="nav-link active" href="#img">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Img, Srcset Tag
+                        </a>
+                        <a class="nav-link active" href="#input">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Input Tag
+                        </a>
+                        <a class="nav-link active" href="#label">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Label Tag
+                        </a>
+                        <a class="nav-link active" href="#list">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Ul, Ol, Li Tag
+                        </a>
+                        <a class="nav-link active" href="#main">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Main Tag
+                        </a>
+                        <a class="nav-link active" href="#mark">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Mark Tag
+                        </a>
+                        <a class="nav-link active" href="#meter_progress">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Meter and Progress Tag
+                        </a>
+                        <a class="nav-link active" href="#nav">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Nav Tag
+                        </a>
+                        <a class="nav-link active" href="#noscript">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Noscript Tag
+                        </a>
+                        <a class="nav-link active" href="#object">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Object Tag
+                        </a>
+                        <a class="nav-link active" href="#select_optgroup_option">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Select, Optgroup, Option Tag
+                        </a>
+                        <a class="nav-link active" href="#meta">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Meta Tag
+                        </a>
+                        <a class="nav-link active" href="#picture">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Picture, Source Tag
+                        </a>
+                        <a class="nav-link active" href="#pre">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Pre Tag
+                        </a>
+                        <a class="nav-link active" href="#ruby">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Ruby Tag
+                        </a>
+                        <a class="nav-link active" href="#section">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Section Tag
+                        </a>
+                        <a class="nav-link active" href="#script">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Script Tag
+                        </a>
+                        <a class="nav-link active" href="#span">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Span Tag
+                        </a>
+                        <a class="nav-link active" href="#style">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Style Tag
+                        </a>
+                        <a class="nav-link active" href="#sub_sup">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Sub, Sup Tag
+                        </a>
+                        <a class="nav-link active" href="#svg">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            SVG Tag
+                        </a>
+                        <a class="nav-link active" href="#table">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Table Tag
+                        </a>
+                        <a class="nav-link active" href="#video">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Video Tag
+                        </a>
+                        <a class="nav-link active" href="#shortcut">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Shortcut Icon
+                        </a>
+                        <a class="nav-link active" href="#marquee">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Marquee Tag
+                        </a>
+                        <div class="sb-sidenav-menu-heading">HTML Tags</div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <!-- Heading Start -->
+                <div class="container-fluid bg-secondary py-3 mb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 text-center">
+                            <h1 class="display-6 text-white">HTML Cheat Sheet</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- Heading End -->
+
+                <!-- Main Content Start -->
+                <div class="container">
+                    <h1 class="h2">Hyper Text Markup Language (HTML)</h1>
+                    <section class="my-3" id="introduction">
+                        <h2>Introduction:</h2>
+                        <p>Hyper Text Markup Language also Know as HTML is used to create Web Pages or Websites. It
+                            is developed by Tim Berners-Lee in 1993. It is a service which runs Web Pages.</p>
+                        <p> &#8620; Text Editiors: NotePad, Notepad++, Sublime Text, VS Code etc.</p>
+                        <p> &#8620; Output: On any web browser.</p>
+                        <p> &#8620; Extension: Save into .html or .htm</p>
+
+                        <h2>HTML Tags:</h2>
+                        <p> There are two types of tags in HTML</p>
+                        <p> 1. Paired Tags: Which starts and close. Like &lt;html&gt; &lt;/html&gt;, &lt;a&gt;
+                            &lt;/a&gt;</p>
+                        <p> 2. Unpaired Tags: Which starts but don't close. Like &lt;br&gt; &lt;hr&gt;,
+                            &lt;img&gt;</p>
+
+                        <h3>Boiler Plate Code:</h3>
+                        <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CodeX&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;CodeX&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="comment">
+                        <h3>1. Comment Tag:</h3>
+                        <pre
+                            class="language-html"> <code>&lt;!-- This is comment. Code or Text in comment won't appear in brower. --&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="anchor">
+                        <h3>2. Anchor Tag:</h3>
+                        <pre class="language-html"><code>&lt;a href="About.html"&gt;About Us&lt;/a&gt;
+                    
+&lt;a href="https://www.facebook.com/" target="_blank"&gt;Go to facebook&lt;/a&gt;
+                    
+&lt;a href="https://www.facebook.com/" title="Click here to open facebook"&gt;Open facebook&lt;/a&gt;
+        
+&lt;a href="#"&gt;Go to Top&lt;/a&gt;
+        
+&lt;a href="images/photo.jpg" download="photo" hreflang="en"&gt;Download Here&lt;/a&gt;
+        
+&lt;p&gt; &lt;a href="#computer"&gt;Computer&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt; &lt;a href="#laptop"&gt;Laptop&lt;/a&gt; &lt;/p&gt;
+        
+&lt;h1&gt; &lt;a name="computer"&gt;Computer&lt;/a&gt; &lt;/h1&gt;
+&lt;h1&gt; &lt;a name="laptop"&gt;Laptop&lt;/a&gt; &lt;/h1&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="abbr">
+                        <h3>3. Abbr Tag (Abbreviation Tag):</h3>
+                        <pre class="language-html"><code>&lt;abbr title="Pen Drive"&gt;PD&lt;/abbr&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="acronym">
+                        <h3>4. Acronym Tag (Abbreviation Tag):</h3>
+                        <pre
+                            class="language-html"><code>&lt;acronym title="United Kingdom"&gt;UK&lt;/acronym&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="address">
+                        <h3>5. Address Tag:</h3>
+                        <pre class="language-html"><code>&lt;address&gt;
+    Author: Sher Khan Baloch.
+    &lt;a href="mailto: admin@codex.com"&gt;Email: admin@codex.com&lt;/a&gt;
+    Visit us at: &lt;a href="https://www.sherkhanbaloch.com"&gt;www.sherkhanbaloch.com&lt;/a&gt;
+&lt;/address&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="article">
+                        <h3>6. Article Tag</h3>
+                        <pre class="language-html"><code>&lt;article style="width: 300px; border: 2px solid gray; padding: 10px; border-radius: 10px; margin: 20px;"&gt;
+    &lt;img src="img/img.jpeg" alt="article-image"&gt;
+    &lt;h1&gt;This is article heading.&lt;/h1&gt;
+    &lt;p&gt;this is article paragraph.&lt;/p&gt;
+    &lt;time&gt; 11/07/2021 02:31 PM&lt;/time&gt;
+    &lt;address&gt;Author: Sher Khan Baloch.&lt;/address&gt;
+&lt;/article&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="area">
+                        <h3>7. Area Tag</h3>
+                        <pre class="language-html"><code>&lt;img src="img/image.jpeg" usemap="#universe" alt=""&gt;
+&lt;map name="universe"&gt;
+    &lt;area shape="ract" coords="left, top, right, bottom" href="saturn.html" title="Click Me To See Saturn Info:" alt=""&gt;
+&lt;/map&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="aside">
+                        <h3>8. Aside Tag</h3>
+                        <pre class="language-html"><code>&lt;aside style="width: 25px; float: left; background-color: gray; color: white; padding: 10px;"&gt;
+    &lt;h1&gt;This is aside heading.&lt;/h1&gt;
+    &lt;p&gt;This is aside paragraph.&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="audio">
+                        <h3>9. Audio Tag</h3>
+                        <pre class="language-html"><code>&lt;audio controls autoplay&gt;
+    &lt;source src="Song.mp3" type="audio/mp3"&gt;
+&lt;/audio&gt;
+                
+&lt;audio controls loop&gt;
+    &lt;source src="Song.mp3" type="audio/mp3"&gt;
+&lt;/audio&gt;
+                
+&lt;audio controls muted&gt;
+    &lt;source src="Song.mp3" type="audio/mp3"&gt;
+&lt;/audio&gt;
+                
+&lt;audio controls preload="auto"&gt;
+    &lt;source src="Song.mp3" type="audio/mp3"&gt;
+&lt;/audio&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="bold">
+                        <h3>10. Bold Tag</h3>
+                        <pre class="language-html"><code>&lt;b&gt; This Is Bold Line.&lt;/b&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="base">
+                        <h3>11. Base Tag</h3>
+                        <pre class="language-html"><code>&lt;!-- Use This Code In Head Tag --&gt;
+&lt;base href="Media\Images\"&gt;
+        
+&lt;!-- Use This Code In Body Tag --&gt;
+&lt;img src="img.jpeg" alt=""&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="bdo">
+                        <h3>12. Bdo Tag</h3>
+                        <pre class="language-html"><code>&lt;bdo dir="auto"&gt;This is Auto Direction BDO Tag.&lt;/bdo&gt;
+
+&lt;bdo dir="ltr"&gt;This is Left To Right Direction BDO Tag.&lt;/bdo&gt;
+
+&lt;bdo dir="rtl"&gt;This is Right To Left Direction BDO Tag.&lt;/bdo&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="blockquote">
+                        <h3>13. Blockquote Tag</h3>
+                        <pre class="language-html"><code>&lt;!-- To Know From Article Is Taken. --&gt;
+&lt;blockquote cite="articleLocation"&gt;
+    &lt;h2&gt;Heading.&lt;/h1&gt;
+    &lt;p&gt;Paragraph.&lt;/p&gt;
+&lt;/blockquote&gt;
+</code></pre>
+                    </section>
+
+                    <section class="my-3" id="body">
+                        <h3>14. Body Tag</h3>
+                        <pre class="language-html"><code>&lt;body bgcolor="gray"&gt;;  &lt;/body&gt; &lt;!-- Background Color of Complete Webpage. --&gt;
+                        
+&lt;body background="img/image.jpeg"&gt; &lt;/body&gt; &lt;!-- Background Image of Complete Webpage. --&gt;
+                        
+&lt;body text="red"&gt;  &lt;/body&gt; &lt;!-- Text Color of Complete Webpage. --&gt;
+                        
+&lt;body link="green"&gt;  &lt;/body&gt; &lt;!-- Link Color of Complete Webpage. --&gt;
+                        
+&lt;body vlink="yellow"&gt;  &lt;/body&gt; &lt;!-- Visited Link Color of Complete Webpage. --&gt;
+                        
+&lt;body alink="blue"&gt;  &lt;/body&gt;; &lt;!-- Active Link Color of Complete Webpage. --&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="button">
+                        <h3>15. Button Tag</h3>
+                        <pre class="language-html"><code>&lt;button type="button" name="button" onclick="alert('Thanks For Joining Us.')"&gt; Click Me &lt;/button&gt;
+                    
+&lt;button type="submit" name="submit"&gt; This is Submit Button &lt;/button&gt;
+                    
+&lt;button type="reset" name="reset"&gt; This Is Reset Button &lt;/button&gt;
+
+&lt;button type="button" disabled&gt; This is disabled Button &lt;/button&gt;
+
+&lt;button type="button" accesskey="r"&gt; ALT + R is shortcut for this button  &lt;/button&gt;
+</code></pre>
+                    </section>
+
+                    <section class="my-3" id="caption">
+                        <h3>16. Caption Tag</h3>
+                        <pre class="language-html"><code>&lt;table&gt;
+    &lt;caption&gt; This is table caption. &lt;/caption&gt;
+&lt;/table&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="cite">
+                        <h3>17. Cite Tag</h3>
+                        <pre
+                            class="language-html"><code>&lt;p&gt; &lt;cite&gt;CodeX&lt;/cite&gt; By Sher Khan Baloch.&lt;/p&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="code">
+                        <h3>18. Code Tag</h3>
+                        <pre class="language-html"><code>&lt;p&gt;This is JavaScript Code.
+    &lt;code&gt;
+        var a = 5;
+            function myFunc(){
+                Console.log(a);
+            }
+    &lt;/code&gt;
+&lt;/p&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="col">
+                        <h3>19. Col Tag (For More Columns)</h3>
+                        <pre class="language-html"><code>&lt;table&gt;
+    &lt;caption&gt;This is caption.&lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col span="1" style="background-color: red;"&gt;
+    &lt;/colgroup&gt;
+&lt;/table></code></pre>
+                    </section>
+
+                    <section class="my-3" id="colgroup">
+                        <h3>20. Colgroup Tag (For Few Columns)</h3>
+                        <pre class="language-html"><code>&lt;table&gt;
+    &lt;caption&gt;This is caption.&lt;/caption&gt;
+    &lt;colgroup span="1" style="background-color: red;"&gt; &lt;/colgroup&gt;
+&lt;/table></code></pre>
+                    </section>
+
+                    <section class="my-3" id="data">
+                        <h3>21. Data Tag</h3>
+                        <pre class="language-html"><code>&lt;!-- Show Different Value To Front Page and Server. --&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;data value="101"&gt;Hair Oil&lt;/data&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="datalist">
+                        <h3>22. Datalist Tag</h3>
+                        <pre class="language-html"><code>&lt;input list="cities"&gt;
+&lt;datalist id="cities"&gt;
+    &lt;option value="Larkana"&gt;&lt;/option&gt;
+    &lt;option value="Karachi"&gt;&lt;/option&gt;
+    &lt;option value="Lahore"&gt;&lt;/option&gt;
+    &lt;option value="Islamabad"&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+&lt;input type="submit" value="Submit"&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="dd">
+                        <h3>23. DD Tag (Definition)</h3>
+                        <pre class="language-html"><code>&lt;dl&gt;
+    &lt;dt&gt;Computer&lt;/dt&gt;
+    &lt;dd&gt;Computer is an electronic machine which receive input, process it, give output and store it.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="del">
+                        <h3>24. Del Tag (Delete)</h3>
+                        <pre class="language-html"><code>&lt;p&gt;We will go to the &lt;del cite="Karachi is so far from here." datetime="01-08-2024 10:52:00"&gt;Karachi&lt;/del&gt;
+    &lt;ins&gt;Larkana&lt;/ins&gt;
+&lt;/p&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="details">
+                        <h3>25. Details, Summary Tag</h3>
+                        <pre class="language-html"><code>&lt;details open&gt;
+    &lt;summary&gt;Computer&lt;/summary&gt;
+    &lt;p&gt;Computer is an electronic machine which receive input, process it, give output and store it.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="dfn">
+                        <h3>26. DFN Tag (Definition)</h3>
+                        <pre class="language-html"><code>&lt;!-- Preview In Italic --&gt;
+&lt;p&gt;I am &lt;dfn title="Sher Khan Baloch"&gt;SKB&lt;/dfn&gt;&lt;/p&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="dialog">
+                        <h3>27. Dialog Tag (Pop Box)</h3>
+                        <pre class="language-html"><code>&lt;dialog open&gt;Welcome&lt;/dialog&gt;
+&lt;p&gt;This is Paragraph&lt;/p&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="div">
+                        <h3>28. Div Tag (Division)</h3>
+                        <pre class="language-html"><code>&lt;!-- Most Important, Valuable, and Main Tag For Building Websites. --&gt;
+&lt;div&gt;
+    &lt;p&gt;Welcome To CodeX&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="IEM">
+                        <h3>29. I and EM Tag</h3>
+                        <pre class="language-html"><code>&lt;em&gt;HTML&lt;/em&gt;
+&lt;i&gt;Markup Language&lt;/i&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="embed">
+                        <h3>30. Embed Tag (Multi-Media)</h3>
+                        <pre
+                            class="language-html"><code>&lt;embed src="Video.mp4" type="video/mp4" width="500px"&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="fieldset">
+                        <h3>31. Fieldset, Legend Tag</h3>
+                        <pre class="language-html"><code>&lt;fieldset&gt;
+    &lt;legend&gt;Personal Information:&lt;/legend&gt;
+&lt;/fieldset&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="figure">
+                        <h3>32. Figure, Figcaption Tag</h3>
+                        <pre class="language-html"><code>&lt;figure&gt;
+    &lt;img src="Moen-Jo-Daro.jpeg" alt="Moen-Jo-Daro-Image" width="100%"&gt;
+    &lt;figcaption&gt;Moen Jo Daro, Larkana, Sindh, Pakistan&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="footer">
+                        <h3>33. Footer Tag</h3>
+                        <pre class="language-html"><code>&lt;footer&gt;
+    &lt;p&gt;Author: &lt;em&gt;Sher Khan Baloch&lt;/em&gt;&lt;/p&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+&lt;/footer&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="form">
+                        <h3>34. Form Tag</h3>
+                        <pre class="language-html"><code>&lt;form action="Thank.html" name="login-form" method="post" autocomplete="on" novalidate&gt;
+    First Name: &lt;input type="text"&gt;
+    Last Name: &lt;input type="text"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="header">
+                        <h3>35. Header Tag</h3>
+                        <pre class="language-html"><code>&lt;header&gt;
+    CodeX
+    &lt;a href="#"&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+&lt;/header&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="hr">
+                        <h3>36. HR Tag</h3>
+                        <pre class="language-html"><code>&lt;p&gt;First Paragraph&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Second Paragraph&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Third Paragraph&lt;/p&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="iframe">
+                        <h3>37. iFrame Tag With Sandbox</h3>
+                        <pre class="language-html"><code>&lt;!-- Sandbox: Used For The Restrictions --&gt;
+&lt;iframe src="Gallery.html" width="400px" name="myFrame" sandbox="allow-same-origin"&gt;&lt;/iframe&gt;
+
+&lt;iframe src="Gallery.html" width="400px" name="myFrame" sandbox="allow-scripts"&gt;&lt;/iframe&gt;
+
+&lt;iframe src="Gallery.html" width="400px" name="myFrame" sandbox="allow-top-navigation"&gt;&lt;/iframe&gt;
+
+&lt;iframe src="Gallery.html" width="400px" name="myFrame" sandbox="allow-popups"&gt;&lt;/iframe&gt;
+
+&lt;iframe src="Gallery.html" width="400px" name="myFrame" sandbox="allow-forms"&gt;&lt;/iframe&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="img">
+                        <h3>38. Img Tag With Srcset</h3>
+                        <pre
+                            class="language-html"><code>&lt;img src="Image.jpeg" width="300px" alt="Alternative-Text"&gt;
+
+&lt;img src="Image.jpeg" width="300px" alt="Alternative-Text" longdesc="Long Description"&gt;
+                        
+&lt;img src="Image.jpeg" width="300px" alt="Alternative-Text" width="300px" longdesc="Long Description" ismap&gt;
+                        
+&lt;img src="Image.jpeg" width="300px" alt="Alternative-Text" width="300px" longdesc="Long Description" ismap sizes=""&gt;
+                        
+&lt;img src="Image.jpeg" width="300px" alt="Alternative-Text" width="300px" longdesc="Long Description" ismap sizes="" crossorigin="anonymous"&gt;
+                        
+&lt;img src="Image.jpeg" width="300px" alt="Alternative-Text" width="300px" longdesc="Long Description" ismap sizes="" crossorigin="anonymous" usemap=""&gt;
+                        
+&lt;img src="Image.jpeg" style="width: 100%;" alt="" srcset="image.jpeg 500w, image2.jpeg 1000w, image3.jpeg 1500w"&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="input">
+                        <h3>39. Input Tag</h3>
+                        <pre class="language-html"><code>&lt;!-- For Simple Text --&gt;
+&lt;input type="text" name="" id="" autofocus required size="5"&gt;
+                            
+&lt;!-- For Insert Email --&gt;
+&lt;input type="email" name="" id="" placeholder="Enter Your Email" required&gt;
+                            
+&lt;!-- For Insert Password --&gt;
+&lt;input type="password" name="" id="" maxlength="20" required&gt;
+                            
+&lt;!-- For Insert Telephone No: --&gt;
+&lt;input type="tel" name="" id=""&gt;
+                            
+&lt;!-- For Date and Time --&gt;
+&lt;input type="date" name="" id=""&gt;
+                            
+&lt;!-- For MCSQs, Gender or Else --&gt;
+&lt;input type="radio" name="" id=""&gt;
+                            
+&lt;!-- For Check Box --&gt;
+&lt;input type="checkbox" name="" id="" checked&gt;
+                            
+&lt;!-- For Submit Button --&gt;
+&lt;input type="submit" name="" id=""&gt;
+                            
+&lt;!-- For Insert Time --&gt;
+&lt;input type="time" name="" id=""&gt;
+                            
+&lt;!-- For Inserting Date and Time Both --&gt;
+&lt;input type="datetime-local" name="" id=""&gt;
+                            
+&lt;!-- For Choosing Color --&gt;
+&lt;input type="color" name="" id=""&gt;
+                            
+&lt;!-- For Choosing File --&gt;
+&lt;input type="file" name="" id="" multiple&gt;
+                            
+&lt;!-- For Only Selecting Images --&gt;
+&lt;input type="file" name="" id="" accept="image/*"&gt;
+                            
+&lt;!-- For Inserting Number With Validation --&gt;
+&lt;input type="number" name="" id="" min="1" max="100" step="5"&gt;
+                            
+&lt;!-- For Inserting Number But With Bar --&gt;
+&lt;input type="range" name="" id="" min="1" max="100"&gt;
+                            
+&lt;!-- For Searching --&gt;
+&lt;input type="search" name="" id=""&gt;
+                            
+&lt;!-- For Inserting URL --&gt;
+&lt;input type="url" name="" id=""&gt;
+                            
+&lt;!-- For Reset Button --&gt;
+&lt;input type="reset" name="" id=""&gt;
+                            
+&lt;!-- For Send Image On Submit --&gt;
+&lt;input type="image" name="" id="" src="Image.jpeg"&gt;
+                            
+&lt;!-- For Long Description or Message --&gt;
+&lt;textarea name="" id="" cols="40" rows="20"&gt;&lt;/textarea&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="label">
+                        <h3>40. Label Tag</h3>
+                        <pre class="language-html"><code>&lt;form action=""&gt;
+    Gender:
+    &lt;label for="male"&gt;Male&lt;/label&gt;
+    &lt;input type="radio" name="gender" id="male"&gt;
+                    
+    &lt;label for="female"&gt;Female&lt;/label&gt;
+    &lt;input type="radio" name="gender" id="female"&gt;
+&lt;/form&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="list">
+                        <h3>41. Ul, Ol, Li Tag</h3>
+                        <pre class="language-html"><code>&lt;!-- Unordered List --&gt;
+&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+    &lt;li&gt;PHP&lt;/li&gt;
+&lt;/ul&gt;
+                        
+&lt;!-- Ordered List --&gt;
+&lt;ol type="1" start="10" reversed&gt;
+    &lt;li&gt;C++&lt;/li&gt;
+    &lt;li&gt;Java&lt;/li&gt;
+    &lt;li&gt;SQL&lt;/li&gt;
+    &lt;li&gt;C#&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="main">
+                        <h3>42. Main Tag</h3>
+                        <pre class="language-html"><code>&lt;main&gt;
+    &lt;h2&gt;Heading&lt;/h2&gt;
+    &lt;section&gt;This is Section.&lt;/section&gt;
+    &lt;p&gt;This is Paragraph Inside Main.&lt;/p&gt;
+&lt;/main&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="mark">
+                        <h3>43. Mark Tag</h3>
+                        <pre
+                            class="language-html"><code>&lt;p&gt;I am Sher Khan Baloch &lt;mark&gt;Founder of CodeX&lt;/mark&gt; &lt;/p&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="meter_progress">
+                        <h3>44. Meter and Progress Tag</h3>
+                        <pre class="language-html"><code>Temperature: &lt;meter low="20" high="80" min="0" max="100" value="75" optimum="50"&gt;75 C&lt;/meter&gt;
+
+Downloading: &lt;progress value="30" max="100"&gt;&lt;/progress&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="nav">
+                        <h3>45. Nav Tag</h3>
+                        <pre class="language-html"><code>&lt;nav&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;About Us&lt;/a&gt;
+    &lt;a href="#"&gt;Contact Us&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="noscript">
+                        <h3>46. Noscript Tag</h3>
+                        <pre class="language-html"><code>&lt;script type="text/javascript"&gt;
+    document.write("CodeX");
+&lt;/script&gt;
+                    
+&lt;noscript&gt;Sorry Your Browser Does Not Support JavaScript&lt;/noscript&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="object">
+                        <h3>47. Object Tag</h3>
+                        <pre
+                            class="language-html"><code>&lt;object data="Intro.mp4" type="video/mp4" width="400px" height="400px" name="CodeX Intro"&gt;&lt;/object&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="select_optgroup_option">
+                        <h3>48. Select, Optgroup, Option Tag</h3>
+                        <pre class="language-html"><code>&lt;select name="" id="" multiple disabled&gt;
+    &lt;optgroup label="Laptops"&gt;
+        &lt;option value=""&gt;Dell&lt;/option&gt;
+        &lt;option value="" selected&gt;HP&lt;/option&gt;
+        &lt;option value=""&gt;Lenovo&lt;/option&gt;
+        &lt;option value=""&gt;Asus&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="meta">
+                        <h3>49. Meta Tag (Used For SEO)</h3>
+                        <pre class="language-html"><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="description" content="CodeX provide Free Code, Snippets, Cheatsheets, Projects, Notes"&gt;
+    &lt;meta name="keywords" content="Web Desgin, Computer Programming, Coding, Web Development"&gt;
+    &lt;meta name="author" content="Sher Khan Baloch"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="refresh" content="5"&gt;
+    &lt;meta name="robots" content="Index, Follow"&gt;
+    &lt;title&gt;CodeX&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="picture">
+                        <h3>50. Picture and Source Tag</h3>
+                        <pre class="language-html"><code>&lt;picture&gt;
+    &lt;source media="(min-width: 650px)" srcset="Image1.jpeg"&gt;
+    &lt;source media="(min-width: 465px)" srcset="Image2.jpeg"&gt;
+    &lt;img src="Image.jpeg" alt=""&gt;
+&lt;/picture&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="pre">
+                        <h3>51. Pre Tag</h3>
+                        <pre class="language-html"><code>&lt;!-- Custom Writing Style. This Tag Accepts Spaces Unlike &lt;P&gt; Tag. --&gt;
+&lt;pre&gt;
+To
+            The Head of Campus
+            SZABIST University Larkana Campus
+Subject:    Request For Adding Pre Tag In HTML Cheatsheet.
+Respected Concern,
+            We would like to add this tag in our HTML Cheatsheet in CodeX.    
+&lt;/pre&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="ruby">
+                        <h3>52. Ruby, Rt, Rb Tag</h3>
+                        <pre class="language-html"><code>Hello! I am
+&lt;ruby&gt;
+    &lt;rb&gt;SKB&lt;/rb&gt;
+    &lt;rt&gt;Sher Khan Baloch&lt;/rt&gt;
+&lt;/ruby&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="section">
+                        <h3>53. Section Tag (Best For SEO)</h3>
+                        <pre class="language-html"><code>&lt;section&gt;
+    &lt;h2&gt;Heading&lt;/h2&gt;
+    &lt;p&gt;Paragraph&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="script">
+                        <h3>54. Script Tag</h3>
+                        <pre class="language-html"><code>&lt;head&gt;
+    &lt;script type="text/javascript"&gt;
+        document.write("This CodeX is written using JavaScript.");
+    &lt;/script&gt;
+                        
+    &lt;script src="script.js" async="true"&gt;&lt;/script&gt;
+    
+    &lt;script src="script.js" defer="true"&gt;&lt;/script&gt;
+&lt;/head&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="span">
+                        <h3>55. Span Tag</h3>
+                        <pre
+                            class="language-html"><code>&lt;p&gt;Welcome To My Website &lt;span style="background-color: maroon; color: white;"&gt;CodeX&lt;/span&gt; &lt;/p&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="style">
+                        <h3>56. Style Tag</h3>
+                        <pre class="language-html"><code>&lt;head&gt;
+    &lt;style type="text/css"&gt;
+    h2 {
+        color: red;
+            font-size: 45px;
+        }     
+        p {
+            color: green;
+            font-size: 30px;
+        }
+    &lt;/style&gt;
+    
+    &lt;style type="text/css" media="print"&gt;
+        h2 {
+            color: white;
+            background-color: gray;
+            font-size: 45px;
+        }
+        p {
+            color: black;
+            font-size: 30px;
+        }
+    &lt;/style&gt;
+        
+    &lt;style type="text/css" media="screen and (max-width: 500px)"&gt;
+        h2 {
+            color: red;
+            background-color: white;
+            font-size: 50px;
+        }        
+        p {
+            color: red;
+            font-size: 40px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="sub_sup">
+                        <h3>57. Sub and Sup Tag</h3>
+                        <pre class="language-html"><code>&lt;!-- Super Script --&gt;
+&lt;p&gt;I am in Class 2&lt;sup&gt;nd&lt;/sup&gt;&lt;/p&gt;
+                        
+&lt;!-- Sub Script --&gt;
+&lt;p&gt;Water Formula Is: H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="svg">
+                        <h3>58. SVG Tag</h3>
+                        <pre class="language-html"><code>&lt;svg width="100" height="100" style="border: 1px solid green;"&gt;
+    &lt;circle cx="50" cy="50" r="40" fill="yellow" stroke="red" stroke-width="5"&gt;&lt;/circle&gt;
+&lt;/svg&gt;
+                    
+&lt;svg width="100" height="100" style="border: 1px solid green;"&gt;
+    &lt;rect rx="10" x="10" y="10" width="80" height="80" fill="yellow" stroke="red" stroke-width="5"&gt;&lt;/rect&gt;
+&lt;/svg&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="table">
+                        <h3>59. Table Tag</h3>
+                        <pre class="language-html"><code>&lt;head&gt;
+    &lt;style type="text/css"&gt;
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-spacing: 1px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+                    
+&lt;body&gt;
+    &lt;!-- 
+        th = Table Heading
+        tr = Table Row
+        td = Table Data / Column
+        Rowspan = Row Merge
+        Colspan = Column Merge
+    --&gt;
+
+    &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;ID&lt;/th&gt;
+                &lt;th&gt;Item&lt;/th&gt;
+                &lt;th&gt;Rate&lt;/th&gt;
+                &lt;th&gt;Remarks&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;01&lt;/td&gt;
+                &lt;td&gt;Computer&lt;/td&gt;
+                &lt;td&gt;100&lt;/td&gt;
+                &lt;td rowspan="3"&gt;Rows Merged&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;02&lt;/td&gt;
+                &lt;td&gt;Laptop&lt;/td&gt;
+                &lt;td&gt;200&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;03&lt;/td&gt;
+                &lt;td&gt;Tablet&lt;/td&gt;
+                &lt;td&gt;300&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+        &lt;tfoot&gt;
+            &lt;tr&gt;
+                &lt;td colspan="2"&gt;Grand Total&lt;/td&gt;
+                &lt;td&gt;600&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tfoot&gt;
+    &lt;/table&gt;
+&lt;/body&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="video">
+                        <h3>60. Video Tag</h3>
+                        <pre
+                            class="language-html"><code>&lt;video width="500px" poster="Image.jpeg" controls autoplay loop muted preload="auto"&gt;
+    &lt;source src="Footage.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+                    
+&lt;video width="500px" src="Footage.mp4" poster="Image.jpeg" controls autoplay loop muted preload="auto"&gt;&lt;/video&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="shortcut">
+                        <h3>61. Shortcut Icon</h3>
+                        <pre class="language-html"><code>&lt;head&gt;
+    &lt;title&gt;CodeX&lt;/title&gt;
+    &lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;
+&lt;/head&gt;</code></pre>
+                    </section>
+
+                    <section class="my-3" id="marquee">
+                        <h3>62. Marquee Tag</h3>
+                        <pre class="language-html"><code>&lt;marquee behavior="scroll"&gt;
+    &lt;h2&gt;This is Behavior attribute with Scroll &lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee behavior="alternate"&gt;
+    &lt;h2&gt;This is Behavior attribute with Alternate &lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee behavior="slide"&gt;
+    &lt;h2&gt;This is Behavior attribute with Slide &lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee direction="right"&gt;
+    &lt;h2&gt;This is Direction attribute with Right &lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee direction="left"&gt;
+    &lt;h2&gt;This is Direction attribute with left &lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee direction="up"&gt;
+    &lt;h2&gt;This is Direction attribute with Up &lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee direction="down"&gt;
+    &lt;h2&gt;This is Direction attribute with down &lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee scrollamount="50"&gt;
+    &lt;h2&gt;This is Scrollamount (Speed Control) attribute with 50&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee bgcolor="aqua"&gt;
+    &lt;h2&gt;This is Bgcolor attribute with Aqua&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee bgcolor="aqua" height="150"&gt;
+    &lt;h2&gt;This is Height attribute with 150&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee bgcolor="aqua" width="250"&gt;
+    &lt;h2&gt;This is width attribute with 250&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee loop="3"&gt;
+    &lt;h2&gt;This is Loop attribute with 3&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee scrolldelay="3"&gt;
+    &lt;h2&gt;This is ScrollDelay attribute with 3&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee bgcolor="aqua" hspace="50"&gt;
+    &lt;h2&gt;This is HSpace attribute with 50&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee bgcolor="aqua" vspace="50"&gt;
+    &lt;h2&gt;This is VSpace attribute with 50&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee bgcolor="aqua" onmouseover="this.stop()"&gt;
+    &lt;h2&gt;This is OnMouseOver attribute with this.stop() (JavScript)&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee bgcolor="aqua" onmouseover="this.stop()" onmouseout="this.start()"&gt;
+    &lt;h2&gt;This is OnMouseOut attribute with this.start() (JavScript)&lt;/h2&gt;
+&lt;/marquee&gt;</code></pre>
+                    </section>
+
+                </div>
+                <!-- Main Content End -->
+            </main>
+
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; CodeX 2024</div>
+                        <div>
+                            <a href="#">Back To Top</a>
+                            &middot;
+                            <a href="https://sherkhanbaloch.github.io/Portfolio/" target="_blank">Developer's
+                                Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.js"></script>
+
+    <!-- Prism JS -->
+    <script src="../js/prism.js"></script>
+
+    <!-- Side Menu Scrpts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="../js/scripts.js"></script>
+</body>
+
+</html>

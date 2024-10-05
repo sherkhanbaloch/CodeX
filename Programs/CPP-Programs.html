@@ -1,0 +1,2468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>C++ Programs - CodeX</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/prism.css">
+
+    <!-- Side Menu CSS -->
+    <link href="../css/styles.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        crossorigin="anonymous"></script>
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="../images/fly.png" type="image/x-icon">
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../images/fly.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            CodeX</a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar-->
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">C++ Programs</div>
+                        <!--
+                        <a class="nav-link active" href="#introduction">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Introduction
+                        </a>
+                        -->
+                        <a class="nav-link active" href="#Arrays">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Arrays
+                        </a>
+                        <a class="nav-link active" href="#2DArray">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            2D Array
+                        </a>
+                        <a class="nav-link active" href="#AssignmentOperators">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Assignment Operators
+                        </a>
+                        <a class="nav-link active" href="#CalculatorUsingSwitchCase">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Calculator Using Switch Case
+                        </a>
+                        <a class="nav-link active" href="#CalculatorWithLoop">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Calculator With Loop
+                        </a>
+                        <a class="nav-link active" href="#CheckingVowelConsonant">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Checking Vowel Consonant
+                        </a>
+                        <a class="nav-link active" href="#CustomSeries">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Custom Series
+                        </a>
+                        <a class="nav-link active" href="#LargestNumberInThreeIntegers">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Largest Number In Three Integers
+                        </a>
+                        <a class="nav-link active" href="#MarksSheet">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Marks Sheet
+                        </a>
+                        <a class="nav-link active" href="#Methods">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Methods
+                        </a>
+                        <a class="nav-link active" href="#OddEvenNumbers">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Odd Even Numbers
+                        </a>
+                        <a class="nav-link active" href="#OperatorsFiveExamples">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Operators Five Examples
+                        </a>
+                        <a class="nav-link active" href="#ParagraphDetailsFinder">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Paragraph Details Finder
+                        </a>
+                        <a class="nav-link active" href="#Pointers">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Pointers
+                        </a>
+                        <a class="nav-link active" href="#QuizGame">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Quiz Game
+                        </a>
+                        <a class="nav-link active" href="#SimpleBillDesign">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Simple Bill Design
+                        </a>
+                        <a class="nav-link active" href="#Structure">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Structure
+                        </a>
+                        <a class="nav-link active" href="#TicTacToeGame">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Tic Tac Toe Game
+                        </a>
+                        <a class="nav-link active" href="#ZodiacSigns">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Zodiac Signs
+                        </a>
+                        <div class="sb-sidenav-menu-heading">Patterns</div>
+                        <a class="nav-link active" href="#Diamonds">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Diamonds
+                        </a>
+                        <a class="nav-link active" href="#Hollow-Shapes">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Hollow Shapes
+                        </a>
+                        <a class="nav-link active" href="#Triangles">
+                            <div class="sb-nav-link-icon"><i class="fab fa-html5"></i></div>
+                            Triangles
+                        </a>
+                        <div class="sb-sidenav-menu-heading">C++ Programs</div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <!-- Heading Start -->
+                <div class="container-fluid bg-secondary py-3 mb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 text-center">
+                            <h1 class="display-6 text-white">C++ Programs</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- Heading End -->
+
+                <!-- Main Content Start -->
+                <div class="container">
+                    <h1 class="h2">C++</h1>
+                    <!--
+                    <section class="my-3" id="introduction">
+                        <h2>Introduction:</h2>
+                        <p>Hyper Text Markup Language also Know as HTML is used to create Web Pages or Websites. It
+                            is developed by Tim Berners-Lee in 1993. It is a service which runs Web Pages.</p>
+                        <p> &#8620; Text Editiors: NotePad, Notepad++, Sublime Text, VS Code etc.</p>
+                        <p> &#8620; Output: On any web browser.</p>
+                        <p> &#8620; Extension: Save into .html or .htm</p>
+
+                        <h2>HTML Tags:</h2>
+                        <p> There are two types of tags in HTML</p>
+                        <p> 1. Paired Tags: Which starts and close. Like &lt;html&gt; &lt;/html&gt;, &lt;a&gt;
+                            &lt;/a&gt;</p>
+                        <p> 2. Unpaired Tags: Which starts but don't close. Like &lt;br&gt; &lt;hr&gt;,
+                            &lt;img&gt;</p>
+
+                        <h3>Boiler Plate Code:</h3>
+                        <pre class="language-cpp"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CodeX&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;CodeX&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </section>
+                    -->
+
+                    <section class="my-3" id="Arrays">
+                        <h3>1. Arrays</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    
+    // Write a program that takes ages of five people and then display it on screen
+    int age[5];
+    
+    for(int i = 0; i < 5; i++)
+    {
+        cin >> age[i];
+    }
+    
+    for(int i = 0; i < 5; i++)
+    {
+        cout << age[i];
+    }
+    
+    
+    // Write a program to input 4 numbers in array then display the greater number and lesser number
+    int num[4];
+        
+    for(int i = 0; i < 4; i++)
+    {
+        cin >> num[i];
+    }
+
+    int greater = num[0];
+    
+    for(int i = 1; i < 4; i++)
+    {
+        if(num[i] > greater)
+        {
+            greater = num[i];
+        }
+    }
+    cout << "Greater Number Is: " << greater;
+    
+    int lesser = num[0];
+    
+    for(int i = 1; i < 4; i++)
+    {
+        if(num[i] < lesser)
+        {
+            lesser = num[i];
+        }
+    }
+    cout << "Lesser Number Is: " << lesser;
+    
+    
+    // Q:1 Input 5 numbers in array then diplay menu:
+    // Press 1 for sum of all numbers
+    // Press 2 for product of all numbers
+    // Press 3 for average of all numbers.
+    int num[5];
+    int choice;
+    int result;
+
+    for(int i = 0; i < 5; i++)
+    {
+        cin >> num[i];
+    }
+    
+    cout << "Press 1 for sum of all numbers" << endl;
+    cout << "Press 2 for product of all numbers" << endl;
+    cout << "Press 3 for average of all numbers" << endl;
+    
+    cin >> choice;
+    
+    if(choice == 1)
+    {
+        for(int i = 0; i < 5; i++)
+        {
+            result += num[i];
+        }
+        cout << "Sum of All Numbers: " << result;
+    }
+    else if(choice == 2)
+    {
+        result = 1;
+        for(int i = 0; i < 5; i++)
+        {
+            result *= num[i];
+        }
+        cout << "Product of All Numbers: " << result;
+    }
+    else if(choice == 3)
+    {
+        for(int i = 0; i < 5; i++)
+        {
+            result += num[i];
+        }
+        cout << "Average of All Numbers: " << (result/5);
+    }
+    
+    
+    // Q:2 Input 5 numbers in array, Then display the numbers in reverse order
+    int num[5];
+    
+    for(int i = 0; i < 5; i++)
+    {
+        cin >> num[i];
+    }
+    
+    // Method 01
+    for(int i = 1; i <= 5; i++)
+    {
+        cout << num[5-i] << endl;
+    }
+    
+    // Method 02
+    for(int i = 4; i >= 0; i--)
+    {
+        cout << num[i] << endl;
+    }
+    
+    
+    // Q:3 Input 4 numbers in array, then swap the first number with last number.
+    int num[4];
+    int temp;
+    
+    for(int i = 0; i < sizeof(num)/sizeof(num[0]); i++)
+    {
+        cin >> num[i];
+    }
+
+    temp = num[3];
+    num[3] = num[0];
+    num[0] = temp;
+
+    for(int i = 0; i < 4; i++)
+    {
+        cout << num[i];
+    }
+    
+    
+    // Q:4 Suppose an integer array contains 2,5,8,12,9. Display the numbers of even index.
+    int num[5] = {2, 5, 8, 12, 9};
+    for(int i = 0; i < 5; i+=2)
+    {
+        cout << num[i];
+    }
+    
+    
+    // Bubble Sorting of Array
+    int num[5] = {1, 5, 3, 6, 2};
+    int temp;
+    
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = i; j < 5; j++)
+        {
+            if(num[j] < num[i])
+            {
+                temp = num[i];
+                num[i] = num[j];
+                num[j] = temp;
+            }
+        }
+    }
+    for(int i = 0; i < 5; i++)
+    {
+        cout << num[i];
+    }
+    
+    return 0;
+} 
+                                </code></pre>
+                    </section>
+
+                    <section class="my-3" id="2DArray">
+                        <h3>2. 2D Array</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+#include &lt;stdlib.h&gt;
+
+using namespace std;
+
+// Functions
+void inputArray(int Arr[5][5])
+{
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j < 5; j++)
+        {
+            Arr[i][j] = rand()%50 + 1; // This Will Generate Random Numbers From 1 to 50.
+        }
+    }
+}
+
+void displayArray(int Arr[5][5])
+{
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j < 5; j++)
+        {
+            cout << Arr[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+
+void minMaxArray(int Arr[5][5])
+{
+    int min, max = Arr[0][0];
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j < 5; j++)
+        {
+            if(Arr[i][j] < min)
+            {
+                min = Arr[i][j];
+            }
+            if(Arr[i][j] > max)
+            {
+                max = Arr[i][j];
+            }
+        }
+    }
+    cout << endl;
+    cout << "The Minimum Number Is: " << min << endl;
+    cout << "The Maximum Number Is: " << max << endl << endl;
+}
+
+void evenNumberArray(int Arr[5][5])
+{
+    cout << endl;
+    cout << "Even Numbers In Array Are: " << endl;
+    
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j < 5; j++)
+        {
+            if(Arr[i][j]%2 == 0)
+            {
+                cout << Arr[i][j] << " ";
+            }
+        }
+        cout << endl;
+    }
+}
+
+void oddNumberArray(int Arr[5][5])
+{
+    cout << endl;
+    cout << "Odd Numbers In Array Are: " << endl;
+    
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j < 5; j++)
+        {
+            if(Arr[i][j]%2 != 0)
+            {
+                cout << Arr[i][j] << " ";
+            }
+        }
+        cout << endl;
+    }
+}
+
+int main()
+{
+    /*
+        2D Array Contains Rows and Columns. Syntax: int arrayName[row][columns];
+        1st [] Bracket is Rows and 2nd [] Bracket is Columns.
+        Always 2 Loops Will Be Used. Outer Loop is Used For Rows and Inner Loop is Used For Columns.
+    */
+    
+    // Take Age and Marks of 4 Students In Array Then Display It.
+    int students[4][2];
+    
+    // For Taking Input In Array
+    //  We Have 4 Rows That's Why This Loop Will Rurn 4 Times
+    for(int i = 0; i < 4; i++)
+    {
+        cout << "Enter Age and Marks For " << i << " Student." << endl;
+            
+        //  We Have 2 Columns That's Why This Loop Will Rurn 2 Times
+        for(int j = 0; j < 2; j++)
+        {
+            cin >> students[i][j];
+        }
+    }
+    
+    // For Display Array
+    cout << "Age \t Marks" << endl << endl;
+    for(int i = 0; i < 4; i++)
+    {		
+        for(int j = 0; j < 2; j++)
+        {
+            cout << students[i][j] << " \t";
+        }
+        cout << endl;
+    }
+    
+    
+    // 2D Array With Functions
+    int num[5][5];
+    
+    inputArray(num);
+    displayArray(num);
+    minMaxArray(num);
+    evenNumberArray(num);
+    oddNumberArray(num);
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="AssignmentOperators">
+                        <h3>3. Assignment Operators</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    
+    int a, b, temp;
+    
+    cout << "Enter First Number: ";
+    cin >> a;
+    temp = a;
+    
+    cout << "Enter Second Number: ";
+    cin >> b;
+
+    cout << "\n\n";
+    
+    a += b;
+    cout << "\nResult of A += b is: " << a;
+    a = temp;
+    
+    a -= b;
+    cout << "\nResult of A -= b is: " << a;
+    a = temp;
+    
+    a *= b;
+    cout << "\nResult of A *= b is: " << a;
+    a = temp;
+    
+    a /= b;
+    cout << "\nResult of A /= b is: " << a;
+    a = temp;
+
+    cout << "\n\nLab: Home Work Submitted By: Sher Khan Baloch - BSCS Fall 22";
+    
+    return 0;
+}</code></pre>
+                    </section>
+
+                    <section class="my-3" id="CalculatorUsingSwitchCase">
+                        <h3>4. Calculator Using Switch Case</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main ()
+{
+    
+    int num1, num2;
+    char operators;
+    
+    cout << "Enter First Number: ";
+    cin >> num1;
+    
+    cout << "Enter Operator (+ - * / %): ";
+    cin >> operators;
+    
+    cout << "Enter Second Number: ";
+    cin >> num2;
+    
+    switch(operators)
+    {
+        case '+':
+            cout << num1 << " + " << num2 << " = " << (num1 + num2);
+            break;
+        case '-':
+            cout << num1 << " - " << num2 << " = " << (num1 - num2);
+            break;
+        case '*':
+            cout << num1 << " * " << num2 << " = " << (num1 * num2);
+            break;
+        case '/':
+            cout << num1 << " / " << num2 << " = " << (num1 / num2);
+            break;
+        case '%':
+            cout << num1 << " % " << num2 << " = " << (num1 % num2);
+            break;	
+        default:
+            cout << "Invalid Operator. Enter From + - * /";	
+            break;
+    }
+    
+    return 0;
+}</code></pre>
+                    </section>
+
+                    <section class="my-3" id="CalculatorWithLoop">
+                        <h3>5. Calculator With Loop</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    
+    // Method 01
+    int num[10];
+    int sum;
+    char op;
+    
+    cout << "Enter Number: ";
+    cin >> num[0];
+    sum = num[0];
+    
+    for(int i = 1; i < sizeof(num)/sizeof(num[0]); i++)
+    {
+        cout << "Enter Operator: ";
+        cin >> op;
+    
+        cout << "Enter Number: ";
+        cin >> num[i];
+        
+        switch(op)
+        {
+            case '+':
+                sum += num[i];
+                cout << "Addition: " << sum << endl;
+                break;
+            case '-':
+                sum -= num[i];
+                cout << "Subtraction: " << sum << endl;
+                break;
+            case '*':
+                sum *= num[i];
+                cout << "Multiplication: " << sum << endl;
+                break;
+            case '/':
+                sum /= num[i];
+                cout << "Division: " << sum << endl;
+                break;	
+            default:
+                cout << "Invalid Operator.";	
+                break;
+        }
+    }
+    
+    
+    // Method 02
+    int num1, num2;
+    char op;
+    int sum;
+    
+    cout << "Enter Number: ";
+    cin >> num1;
+    sum = num1;
+    
+    do
+    {
+        cout << "Enter Operator: ";
+        cin >> op;
+    
+        cout << "Enter Number: ";
+        cin >> num2;
+        
+        switch(op)
+        {
+            case '+':
+                sum += num2;
+                cout << "Addition: " << sum << endl;
+                break;
+            case '-':
+                sum -= num2;
+                cout << "Subtraction: " << sum << endl;
+                break;
+            case '*':
+                sum *= num2;
+                cout << "Multiplication: " << sum << endl;
+                break;
+            case '/':
+                sum /= num2;
+                cout << "Division: " << sum << endl;
+                break;	
+            default:
+                cout << "Invalid Operator.";	
+                break;
+        }
+    } while(num2 != 0);
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="CheckingVowelConsonant">
+                        <h3>6. Checking Vowel Consonant</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    char c;
+    cout << "Enter Character: ";
+    cin >> c;
+    
+    if(c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+    {
+        cout << c << " is a vowel.";
+    }
+    else
+    {
+        cout << c << " is a consonant.";
+    }
+    
+    switch(c)
+    {
+        case 'A':
+            cout << c << " is a vowel.";
+            break;
+        case 'E':
+            cout << c << " is a vowel.";
+            break;
+        case 'I':
+            cout << c << " is a vowel.";
+            break;	
+        case 'O':
+            cout << c << " is a vowel.";
+            break;
+        case 'U':
+            cout << c << " is a vowel.";
+            break;
+        default:
+            cout << c << " is a consonant";
+            break;				
+    }
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="CustomSeries">
+                        <h3>7. Custom Series</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    // 1 3 4 6 8 9 10
+    for(int i = 1; i <= 10; i++)
+    {
+        if(i == 2 || i == 5 || i == 7)
+        {
+            continue;
+        }
+        else
+        {
+            cout << i << " ";
+        }
+    }
+    
+    cout << endl;
+    
+    // Escape Every 4th Number 
+    int count = 0;
+    for(int j = 1; j <= 50; j++)
+    {
+        count++;
+        
+        if(count == 4)
+        {
+            count = 0;
+        }
+        else
+        {
+            cout << j << " ";
+        }
+    }
+    
+    cout << endl;
+    
+    // Print From A to Z
+    for(char i = 'A'; i < 'Z'; i++)
+    {
+        cout << i << " ";
+    }
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="LargestNumberInThreeIntegers">
+                        <h3>8. Largest Number In Three Integers</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    int num1, num2, num3;
+    
+    cout << "Enter Three Numbers: ";
+    cin >> num1 >> num2 >> num3;
+    
+    if(num1 > num2 && num1 > num3)
+    {
+        cout << num1 << " is the largest integer.";
+    }
+    else if(num2 > num1 && num2 > num3)
+    {
+        cout << num2 << " is the largest integer.";
+    }
+    else if(num3 > num1 && num3 > num2)
+    {
+        cout << num3 << " is the largest integer.";
+    }
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="MarksSheet">
+                        <h3>9. Marks Sheet</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+
+using namespace std;
+
+int main()
+{
+    string name, caste, classes;
+
+    cout << "----- Personal Information -----" << endl << endl;
+    
+    cout << "Enter Your Name: ";
+    getline(cin, name);
+    
+    cout << "Enter Your Caste: ";
+    getline(cin, caste);
+    
+    cout << "Enter Your Class: ";
+    getline(cin, classes);
+    
+    cout << "\nSubjects Information" << endl << endl;
+    
+    int english, sindhi, math, science, computer;
+    
+    cout << "Enter Your English Marks: ";
+    cin >> english;
+
+    cout << "Enter Your Sindhi Marks: ";
+    cin >> sindhi;
+    
+    cout << "Enter Your Math Marks: ";
+    cin >> math;
+    
+    cout << "Enter Your Science Marks: ";
+    cin >> science;	
+    
+    cout << "Enter Your Computer Marks: ";
+    cin >> computer;
+    
+    cout << "\nPress Enter To Calculate" << endl << endl;
+    
+    int obtMarks = english + sindhi + math + science + computer;
+    float percentage = (float) obtMarks / 500 * 100;
+
+    cout << "\t\t------------------------------------" << endl;
+    cout << "\t\tSZABIST BS Computer Science, Larkana" << endl;
+    cout << "\t\t------------------------------------" << endl << endl;
+    
+    cout << "Name : " << "\t" << name << endl;
+    cout << "Caste: " << "\t" << caste << endl;
+    cout << "Class: " << "\t" << classes << endl << endl;
+    
+    cout << "\t\t\tMarks Details"<< endl << endl;
+    cout << "Subject" << "\t\t" << "Max Marks" << "\t" << "Min Marks" << "\t" << "Obt Marks" << endl << endl;
+    cout << "English" << "\t\t" << "100" << "\t\t" << "33" << "\t\t" << english << endl;
+    cout << "Sindhi" << "\t\t" << "100" << "\t\t" << "33" << "\t\t" << sindhi << endl;
+    cout << "Math" << "\t\t" << "100" << "\t\t" << "33" << "\t\t" << math << endl;
+    cout << "Science" << "\t\t" << "100" << "\t\t" << "33" << "\t\t" << science << endl;
+    cout << "Computer" << "\t" << "100" << "\t\t" << "33" << "\t\t" << computer << endl << endl;
+    
+    cout << "Total Marks " << "\t" << "500" << "\t\t\t\t" << obtMarks << endl << endl;
+    
+    cout << "Percentage : " << "\t" << percentage << "%" << endl;
+    
+    if(percentage >= 80)
+    {
+        cout << "Grade      : " << "\t" << "A-1" << endl;
+    }
+    else if(percentage >= 70 && percentage < 80)
+    {
+        cout << "Grade      : " << "\t" << "A" << endl;
+    }
+    else if(percentage >= 60 && percentage < 70)
+    {
+        cout << "Grade      : " << "\t" << "B" << endl;
+    }
+    else if(percentage >= 50 && percentage < 60)
+    {
+        cout << "Grade      : " << "\t" << "C" << endl;
+    }
+    else if(percentage >= 40 && percentage < 50)
+    {
+        cout << "Grade      : " << "\t" << "D" << endl;
+    }
+    else
+    {
+        cout << "Grade: " << setw(5) << "Fail" << endl;
+    }
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="Methods">
+                        <h3>10. Methods</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+// Functions Which Returns Nothing
+void Add()
+{
+    int n1, n2;
+    cout << "Enter First Number:" << endl;
+    cin >> n1;
+    cout << "Enter Second Number:" << endl;
+    cin >> n2;	
+    cout << "The Addition = " << (n1 + n2) << endl;
+}
+void Subtract()
+{
+    int n1, n2;
+    cout << "Enter First Number:" << endl;
+    cin >> n1;
+    cout << "Enter Second Number:" << endl;
+    cin >> n2;	
+    cout << "The Subtraction = " << (n1 - n2) << endl;
+}
+void Multiply()
+{
+    int n1, n2;
+    cout << "Enter First Number:" << endl;
+    cin >> n1;
+    cout << "Enter Second Number:" << endl;
+    cin >> n2;
+    cout << "The Multiplication = " << (n1 * n2) << endl;
+}
+void Divide()
+{
+    int n1, n2;
+    cout << "Enter First Number:" << endl;
+    cin >> n1;
+    cout << "Enter Second Number:" << endl;
+    cin >> n2;
+    cout << "The Division = " << (n1 / n2) << endl;
+}
+
+// Functions With Return Type
+int Menu()
+{
+    int choice;
+    cout << "Press 01 For Addition" << endl;
+    cout << "Press 02 For Subtraction" << endl;
+    cout << "Press 03 For Multiplication" << endl;
+    cout << "Press 04 For Division" << endl;
+    
+    cin >> choice;
+    
+    return choice;
+}
+
+char Character()
+{
+    return 'S';
+}
+
+string Display()
+{
+    string text;
+    cout << "Enter Any Text: ";
+    getline(cin, text);
+    
+    return text;
+}
+
+// Main Method
+int main()
+{
+    int userChoice = Menu();
+    
+    if(userChoice == 1)
+    {
+        Add();
+    }
+    else if(userChoice == 2)
+    {
+        Subtract();
+    }
+    else if(userChoice == 3)
+    {
+        Multiply();
+    }
+    else if(userChoice == 4)
+    {
+        Divide();
+    }
+    
+    // Calling Functions Which Have Return Type
+    cout << Character();
+    
+    string text = Display();
+    cout << text << endl;
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="OddEvenNumbers">
+                        <h3>11. Odd Even Numbers</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    // Even Numbers
+    for(int i = 0; i <= 50; i+=2)
+    {
+        cout << i << " ";
+    }
+    
+    cout << endl;
+    
+    // Odd Numbers
+    for(int i = 1; i <= 50; i+=2)
+    {
+        cout << i << " ";
+    }
+        
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="OperatorsFiveExamples">
+                        <h3>12. Operators Five Examples</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    
+    int a = 10;
+    int b = 13;
+    int c = 25;
+    int result;
+    
+    // Expressions
+    result = ( a / b ) * c;
+    result = ( b * c ) - a;
+    result = ( a / b ) + c;
+    result = a + b / c;
+    result = a * (b + c);
+    
+    // Relational Operators
+    cout << (a == b);
+    cout << (a != b);
+    cout << (a < b);
+    cout << (a > b);
+    cout << (a <= b);
+    cout << (a >= b);
+    
+    // Logical Operators
+    cout << (25 < 7 || 15 > 36);
+    cout << (15 > 36 || 3 < 7);
+    cout << (14 > 7 && 5 <= 5);
+    cout << (4 > 3 && 17 <= 7);
+    cout << (9 != 7 && 10 != 0);
+        
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="ParagraphDetailsFinder">
+                        <h3>13. Paragraph Details Finder</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    string para;
+    int characters = 0, spaces = 0, words = 0, vowels = 0, consonants = 0;
+    
+    cout << "\t\t ================================================" << endl;
+    cout << "\t\t | Paragraph Details Finder By Sher Khan Baloch |" << endl;
+    cout << "\t\t ================================================" << endl;
+    cout << endl;
+    
+    cout << "Enter Paragraph: ";
+    getline(cin, para);
+    
+    // '\0' means null -- > para[i] != '\0'
+    for(int i = 0; i < para.length(); i++)
+    {
+        if(para[i] != ' ')
+        {
+            characters++;
+            
+            if(para[i] == 'a' || para[i] == 'e' || para[i] == 'i' || para[i] == 'o' || para[i] == 'u')
+            {
+                vowels++;
+            }
+            else
+            {
+                consonants++;
+            }
+        }
+        else
+        {
+            spaces++;
+            words++;
+        }
+    }
+    
+    cout << endl;
+    cout << "Characters With Space: " << para.length() << endl;
+    cout << "Characters: " << characters << endl;
+    cout << "Spaces: " << spaces << endl;
+    cout << "Words: " << (words + 1) << endl;
+    cout << "Vowels: " << vowels << endl;
+    cout << "Consonants: " << consonants << endl;
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="Pointers">
+                        <h3>14. Pointers</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+// Varibales
+string name;
+int rollNo, age, totalMarks;
+char grade;
+float cgpa;
+
+// Pointers
+string *pName = &name;
+int *pRollNo = &rollNo, *pAge = &age, *pTotalMarks = &totalMarks;
+char *pGrade = &grade;
+float *pCgpa = &cgpa;
+    
+void input()
+{
+    cout << "Enter Name: ";
+    getline(cin, name);
+    
+    cout << "Enter The Roll No: ";
+    cin >> rollNo;
+    
+    cout << "Enter Age: ";
+    cin >> age;
+    
+    cout << "Enter Total Marks: ";
+    cin >> totalMarks;	
+
+    cout << "Enter Grade: ";
+    cin >> grade;
+    
+    cout << "Enter CGPA: ";
+    cin >> cgpa;
+}
+
+void display()
+{
+    cout << "The Name of The Student = " << name << endl;
+    cout << "The Address of Name Variable = " << pName << endl << endl;
+    
+    cout << "The Roll No: of The Student = " << rollNo << endl;
+    cout << "The Address of Roll No: Variable = " << pRollNo << endl << endl;
+    
+    cout << "The Age of The Student = " << age << endl;
+    cout << "The Address of Age Variable = " << pAge << endl << endl;
+    
+    cout << "The Total Marks of The Student = " << totalMarks << endl;
+    cout << "The Address of Total Marks Variable = " << pTotalMarks << endl << endl;
+    
+    cout << "The Grade of The Student = " << grade << endl;
+    cout << "The Address of Grade Variable = " << pGrade << endl << endl;
+    
+    cout << "The CGPA of The Student = " << cgpa << endl;
+    cout << "The Address of CGPA Variable = " << pCgpa << endl << endl;
+}
+
+int main()
+{
+    // Pointers are special variables which are used to store address of other variables.
+    // Data Type of Pointer Should Be Same as Data Type of Variable.
+    
+    // Normal Varibale
+    int a = 10;
+    cout << "Value of Variable A is: " << a << endl;
+    cout << "Address of Variable A is: " << &a << endl;
+    
+    // Pointer
+    int *p;
+    p = &a;
+    
+    cout << "Value of Pointer P is: " << p << endl;
+    cout << "Value of That Variable Which Address is Stored in Pointer P is: " << *p << endl;
+    
+    // Assignment
+    input();
+    display();
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="QuizGame">
+                        <h3>15. Quiz Game</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    string name;
+    int choice;
+    char answer;
+    int attempt = 0;
+    int right = 0;
+    
+    cout << "\t\t =================================" << endl;
+    cout << "\t\t | Quiz Game By Sher Khan Baloch |" << endl;
+    cout << "\t\t =================================" << endl;
+    cout << endl;
+    
+    cout << "Enter Your Name: ";
+    getline(cin, name);
+    
+    cout << endl;
+    cout << "Welcome " << name << endl;
+    cout << endl;
+    
+    cout << "1. Play Quiz" << endl;
+    cout << "2. View Score" << endl;
+    cout << "3. Instructions" << endl;
+    cout << "4. Exit Game" << endl;
+    
+    do
+    {
+        cout << endl;
+        cout << "Enter Choice: ";
+        cin >> choice;
+        
+        switch(choice)
+        {
+            case 1:
+                // Questions
+                cout << endl;
+                cout << "\t\t\t ==================" << endl;
+                cout << "\t\t\t | Quiz Questions |" << endl;
+                cout << "\t\t\t ==================" << endl;
+        
+                // Question 01
+                cout << "Q:1 Computer Is an " << endl;
+                cout << "(A) Machine" << "\t" << "(B) Device" << endl << "(C) Box" << "\t\t" << "(D) None" << endl;
+                cout << endl;
+                cout << "Enter Answer: ";
+                cin >> answer;
+        
+                if(answer == 'A')
+                {
+                    cout << "Right Answer." << endl << endl;
+                    attempt++;
+                    right++;	
+                }
+                else
+                {
+                    cout << "Wrong Answer" << endl << endl;
+                    attempt++;	
+                }
+        
+                // Question 02
+                cout << "Q:2 C++ is the " << endl;
+                cout << "(A) Joke" << "\t\t\t" << "(B) Speaking Language" << endl << "(C) Programming Language" << "\t" << "(D) None" << endl;
+                cout << endl;
+                cout << "Enter Answer: ";
+                cin >> answer;
+        
+                if(answer == 'C')
+                {
+                    cout << "Right Answer." << endl << endl;
+                    attempt++;
+                    right++;	
+                }
+                else
+                {
+                    cout << "Wrong Answer" << endl << endl;
+                    attempt++;	
+                }		
+        
+                // Question 03
+                cout << "Q:3 Microsoft Owner is the " << endl;
+                cout << "(A) Marks Zuckerburg" << "\t" << "(B) Bill Gates" << endl << "(C) Steve Jobs" << "\t\t" << "(D) Elon Musk" << endl;
+                cout << endl;
+                cout << "Enter Answer: ";
+                cin >> answer;
+        
+                if(answer == 'B')
+                {
+                    cout << "Right Answer." << endl << endl;
+                    attempt++;
+                    right++;	
+                }
+                else
+                {
+                    cout << "Wrong Answer" << endl << endl;
+                    attempt++;	
+                }
+        
+                // Question 04
+                cout << "Q:4 Facebook is the product of " << endl;
+                cout << "(A) Microsoft" << "\t" << "(B) Tesla" << endl << "(C) Adobe" << "\t" << "(D) Meta" << endl;
+                cout << endl;
+                cout << "Enter Answer: ";
+                cin >> answer;
+        
+                if(answer == 'D')
+                {
+                    cout << "Right Answer." << endl << endl;
+                    attempt++;
+                    right++;	
+                }
+                else
+                {
+                    cout << "Wrong Answer" << endl << endl;
+                    attempt++;	
+                }
+        
+                // Question 05
+                cout << "Q:5 SZABIST is " << endl;
+                cout << "(A) University" << "\t" << "(B) College" << endl << "(C) School" << "\t" << "(D) Park" << endl;
+                cout << endl;
+                cout << "Enter Answer: ";
+                cin >> answer;
+        
+                if(answer == 'A')
+                {
+                    cout << "Right Answer." << endl << endl;
+                    attempt++;
+                    right++;	
+                }
+                else
+                {
+                    cout << "Wrong Answer" << endl << endl;
+                    attempt++;	
+                }
+                
+                // Dashboard
+                cout << endl;
+                cout << "\t\t =================================" << endl;
+                cout << "\t\t | Quiz Game By Sher Khan Baloch |" << endl;
+                cout << "\t\t =================================" << endl;
+                cout << endl;
+                
+                cout << "1. Play Quiz" << endl;
+                cout << "2. View Score" << endl;
+                cout << "3. Instructions" << endl;
+                cout << "4. Exit Game" << endl;
+                break;
+            case 2:
+                // Results
+                cout << endl;
+                cout << "\t\t\t ===================" << endl;
+                cout << "\t\t\t | Quiz Score Card |" << endl;
+                cout << "\t\t\t ===================" << endl;
+        
+                cout << endl;
+                cout << "Player Name: " << name << endl;
+                cout << endl;
+                
+                cout << "Total Attempts: " << attempt << endl;
+                cout << "Right Attempts: " << right << endl;
+                cout << "Wrong Attempts: " << (attempt - right) << endl << endl;
+                
+                // Dashboard
+                cout << endl;
+                cout << "\t\t =================================" << endl;
+                cout << "\t\t | Quiz Game By Sher Khan Baloch |" << endl;
+                cout << "\t\t =================================" << endl;
+                cout << endl;	
+        
+                cout << "1. Play Quiz" << endl;
+                cout << "2. View Score" << endl;
+                cout << "3. Instructions" << endl;
+                cout << "4. Exit Game" << endl;
+                break;
+            case 3:
+                cout << endl;
+                cout << "\t\t\t =====================" << endl;
+                cout << "\t\t\t | Quiz Instructions |" << endl;
+                cout << "\t\t\t =====================" << endl; 
+                cout << endl;
+                
+                cout << "1) Give Answer In Capital Alphabet Otherwise It Will Be Considered Wrong." << endl;
+                cout << "2) To Avoid Problem While Answering Questions Please Turn On The Caps Lock." << endl;
+                
+                // Dashboard
+                cout << endl;
+                cout << "\t\t =================================" << endl;
+                cout << "\t\t | Quiz Game By Sher Khan Baloch |" << endl;
+                cout << "\t\t =================================" << endl;
+                cout << endl;
+                
+                cout << "1. Play Quiz" << endl;
+                cout << "2. View Score" << endl;
+                cout << "3. Instructions" << endl;
+                cout << "4. Exit Game" << endl;	
+                break;	
+            case 4:
+                cout << "Sorry To See You Go. #GoodBye" << endl;
+                break;
+            default:
+                cout << "Invalid Choice. Select Choice From Given Options." << endl;
+                
+                // Dashboard
+                cout << endl;
+                cout << "\t\t =================================" << endl;
+                cout << "\t\t | Quiz Game By Sher Khan Baloch |" << endl;
+                cout << "\t\t =================================" << endl;
+                cout << endl;
+                
+                cout << "1. Play Quiz" << endl;
+                cout << "2. View Score" << endl;
+                cout << "3. Instructions" << endl;
+                cout << "4. Exit Game" << endl;	
+                break;			
+        }
+            
+    } while (choice != 4);
+
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="SimpleBillDesign">
+                        <h3>16. Simple Bill Design</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+         cout <<"\n\t\t   AB Point of Sale \n";
+        cout <<"\t   Address: Larkana, Sindh, Pakistan \n";
+        cout <<"\t -------------------------------------- \n";
+        cout <<"\t |\t\tSale Receipt \t       | \n";
+        cout <<"\t -------------------------------------- \n";
+        cout <<"\t Bill No:\t 001 \n";
+        cout <<"\t Date & Time:\t 09-10-2022 \n";
+        cout <<"\t Customer:\t Afaque Buledi \n";
+        cout <<"\t Payment:\t Cash \n";
+        cout <<"\t -------------------------------------- \n";
+        cout <<"\t Product \t Rate \t Qty \t Amount \n";
+        cout <<"\t -------------------------------------- \n";
+        cout <<"\t Panadol \t  10 \t  2 \t  20 \n";
+        cout <<"\t Brufen \t  15 \t  1 \t  15 \n";
+        cout <<"\t -------------------------------------- \n";
+        cout <<"\t Sub Total: \t\t\t  35 \n";
+        cout <<"\t Discount: \t\t\t   5 \n";
+        cout <<"\t Net Amount: \t\t\t  30 \n";
+        cout <<"\t -------------------------------------- \n";
+        cout <<"\t\t Thank You. Come Again \n";
+        cout <<"\t -------------------------------------- \n";
+        
+        cout <<"\t Developer: Sher Khan Baloch \n";
+        return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="Structure">
+                        <h3>17. Structure</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+// Take Input The Name, Age and Fees of Two Student From a User Then Display It Using Structure
+struct student
+{
+    char name[20];
+    int age;
+    float fees;
+};
+
+int main()
+{
+    /*
+    Structure is Used to Store Different Type of Data.
+    Array Is Used To Store Simillar Type of Data.
+    Combining More Than One Data Types Forming a New Data Type and That Data Type is Known as Structure.
+    */
+    
+    // Method 01 - Without Using Array
+    /*
+    // Creating Object of Structure
+    student obj, obj2;
+    
+    // Taking Input for 1st Student
+    cout << "Enter Student Name: ";
+    cin.getline(obj.name, 20);
+    
+    cout << "Enter Student Age: ";
+    cin >> obj.age;
+    
+    cout << "Enter Student Fees: ";
+    cin >> obj.fees;
+    
+    // Taking Input for 2nd Student
+    cin.ignore();
+    cout << "Enter Student Name: ";
+    cin.getline(obj2.name, 20);
+    
+    cout << "Enter Student Age: ";
+    cin >> obj2.age;
+    
+    cout << "Enter Student Fees: ";
+    cin >> obj2.fees;
+    
+    // Display Data of 1st Student
+    cout << "First Student Information: " << endl;
+    cout << "Name: " << obj.name << endl;
+    cout << "Age: " << obj.age << endl;
+    cout << "Fees: " << obj.fees << endl;
+    
+    // Display Data of 1st Student
+    cout << "Second Student Information: " << endl;
+    cout << "Name: " << obj2.name << endl;
+    cout << "Age: " << obj2.age << endl;
+    cout << "Fees: " << obj2.fees << endl;
+    */
+    
+    // Method 2 - Using An Array With Structure
+    student obj[2];
+    
+    for(int i = 0; i < 2; i++)
+    {
+        cout << "Enter Student Name: ";
+        cin.getline(obj[i].name, 20);
+    
+        cout << "Enter Student Age: ";
+        cin >> obj[i].age;
+    
+        cout << "Enter Student Fees: ";
+        cin >> obj[i].fees;
+        cin.ignore();
+    }
+    
+    for(int i = 0; i < 2; i++)
+    {
+        cout << "Name: " << obj[i].name << endl;
+        cout << "Age: " << obj[i].age << endl;
+        cout << "Fees: " << obj[i].fees << endl << endl;
+    }
+    return 0;
+}
+                                </code></pre>
+                    </section>
+
+                    <section class="my-3" id="TicTacToeGame">
+                        <h3>18. Tic Tac Toe Game</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+#include &lt;windows.h&gt;
+
+using namespace std;
+
+// Global Varibales
+char board[3][3] = {{'1', '2' , '3'}, {'4', '5' , '6'}, {'7', '8' , '9'}};
+char turn = 'X';
+int row, column;
+bool isComputer, isDraw, showResults;
+string playerName1, playerName2;
+
+// Methods Starts Here
+void mainHeading()
+{
+    cout << endl << endl;
+    // Logical Desgin: Printing Tab Space and Equal Sign Using Loops
+    for(int i = 1; i <= 5; i++)
+    {
+        cout << "\t";
+    }
+    for(int i = 1; i <= 56; i++)
+    {
+        cout << "=";	
+    }
+    cout << endl;
+    for(int i = 1; i <= 5; i++)
+    {
+        cout << "\t";
+    }
+    cout << "|             T i c  T a c  T o e  G a m e             |" << endl;
+    for(int i = 1; i <= 5; i++)
+    {
+        cout << "\t";
+    }
+    cout << "|                                                      |" << endl;
+    for(int i = 1; i <= 5; i++)
+    {
+        cout << "\t";
+    }
+    cout << "| Developed By: S h e r  K h a n  B a l o c h (BSCS-1) |" << endl;
+    for(int i = 1; i <= 5; i++)
+    {
+        cout << "\t";
+    }
+    for(int i = 1; i <= 56; i++)
+    {
+        cout << "=";	
+    }
+    cout << endl;
+}
+
+void computerHeading()
+{
+    system("cls");
+    mainHeading();
+    cout << endl;
+    for(int i = 1; i <= 7; i++)
+    {
+        cout << "\t";
+    }
+    cout << " C o m p u t e r  M o d e" << endl;
+}
+
+void playerHeading()
+{
+    system("cls");
+    mainHeading();
+    cout << endl;
+    for(int i = 1; i <= 7; i++)
+    {
+        cout << "\t";
+    }
+    cout << " T w o  P l a y e r  M o d e" << endl;
+}
+
+void displayBoard()
+{
+    cout << endl << endl;
+    cout << "\t\t\t\t\t\t\t       |       |       " << endl;
+    cout << "\t\t\t\t\t\t\t   " << board[0][0] << "   |   " << board[0][1] << "   |   " << board[0][2] << "   " << endl;
+    cout << "\t\t\t\t\t\t\t ______|_______|_______" << endl;
+    cout << "\t\t\t\t\t\t\t       |       |       " << endl;
+    cout << "\t\t\t\t\t\t\t   " << board[1][0] << "   |   " << board[1][1] << "   |   " << board[1][2] << "   " << endl;
+    cout << "\t\t\t\t\t\t\t ______|_______|_______" << endl;
+    cout << "\t\t\t\t\t\t\t       |       |       " << endl;
+    cout << "\t\t\t\t\t\t\t   " << board[2][0] << "   |   " << board[2][1] << "   |   " << board[2][2] << "   " << endl;
+    cout << "\t\t\t\t\t\t\t       |       |       " << endl;
+}
+
+void playerTurn()
+{
+    int choice;
+    
+    if(isComputer == true)
+    {
+        if(turn == 'X')
+        {
+            cout << "\t Computer [X] Turn: ";
+        }
+        else if(turn == 'O')
+        {
+            cout << "\t " << playerName2 << " [O] Turn: ";
+        }
+    }
+    else if(isComputer == false)
+    {
+        if(turn == 'X')
+        {
+            cout << "\t " << playerName1 << " [X] Turn: ";
+        }
+        else if(turn == 'O')
+        {
+            cout << "\t " << playerName2 << " [O] Turn: ";
+        }
+    }
+    
+    if(isComputer == true)
+    {
+        if(turn == 'X' && board[0][2] != 'X' && board[0][2] != 'O')
+        {
+            choice = 3;
+            Sleep(3000);
+        }
+        else if(turn == 'X' && board[1][1] != 'X' && board[1][1] != 'O')
+        {
+            choice = 5;
+            Sleep(3000);
+        }
+        else if(turn == 'X' && board[1][0] != 'X' && board[1][0] != 'O')
+        {
+            choice = 4;
+            Sleep(3000);
+        }
+        else if(turn == 'X' && board[0][1] != 'X' && board[0][1] != 'O')
+        {
+            choice = 2;
+            Sleep(3000);
+        }
+        else if(turn == 'X' && board[0][0] != 'X' && board[0][0] != 'O')
+        {
+            choice = 1;
+            Sleep(3000);
+        }
+        else if(turn == 'X' && board[2][1] != 'X' && board[2][1] != 'O')
+        {	
+            choice = 8;
+        Sleep(3000);	
+        }
+        else if(turn == 'X' && board[2][0] != 'X' && board[2][0] != 'O')
+        {
+            choice = 7;
+            Sleep(3000);
+        }
+        else if(turn == 'X' && board[1][2] != 'X' && board[1][2] != 'O')
+        {
+            choice = 6;
+            Sleep(3000);	
+        }
+        else if(turn == 'X' && board[2][2] != 'X' && board[2][2] != 'O')
+        {
+            choice = 9;
+            Sleep(3000);	
+        }
+        else
+        {
+            cin >> choice;
+        }
+    }
+    else
+    {
+        cin >> choice;
+    }
+    
+    switch(choice)
+    {
+        case 1:
+            row = 0;
+            column = 0;
+            break;
+        case 2:
+            row = 0;
+            column = 1;
+            break;
+        case 3:
+            row = 0;
+            column = 2;
+            break;
+        case 4:
+            row = 1;
+            column = 0;
+            break;
+        case 5:
+            row = 1;
+            column = 1;
+            break;
+        case 6:
+            row = 1;
+            column = 2;
+            break;
+        case 7:
+            row = 2;
+            column = 0;
+            break;
+        case 8:
+            row = 2;
+            column = 1;
+            break;
+        case 9:
+            row = 2;
+            column = 2;
+            break;							
+        default:
+            cout << "\t Invalid Choice. Try Again." << endl;
+            playerTurn();
+            break;									
+    }
+    
+    if(turn == 'X' && board[row][column] != 'X' && board[row][column] != 'O')
+    {
+    //	system("Color 60");
+        board[row][column] = 'X';
+        turn = 'O';
+        displayBoard();
+    }
+    else if(turn == 'O' && board[row][column] != 'X' && board[row][column] != 'O')
+    {
+    //	system("Color 70");
+        board[row][column] = 'O';
+        turn = 'X';
+        displayBoard();
+    }
+    else
+    {
+        cout << "\t Box Is Alreay Filled. Please Try Again.";
+        playerTurn();
+    }
+}
+
+bool gameOver()
+{
+    showResults = true;
+    // Check Win
+    for(int i = 0; i < 3; i++)
+    {
+        if(board[i][0] == board[i][1] && board[i][0] == board[i][2] || board[0][i] == board[1][i] && board[0][i] == board[2][i]) 
+        {
+             return false;
+        }
+    }
+    
+    if(board[0][0] == board[1][1] && board[0][0] == board[2][2] || board[0][2] == board[1][1] && board[0][2] == board[2][0])
+    {
+        return false;	
+    }	
+    // If there is any box not filled
+    for(int i = 0; i < 3; i++)
+    {
+        for(int j = 0; j < 3; j++)
+        {
+            if(board[i][j] != 'X' && board[i][j] != 'O')
+            {
+                return true;
+            }
+        }
+    }
+    
+    // Game Draw (No One Wins)
+    isDraw = true;
+    return false;	
+}			
+
+int main()
+{
+    int choice;
+    
+    do
+    {
+        isComputer = false;
+        showResults = false;
+        
+        system("cls");
+        mainHeading();
+        cout << endl << endl;
+        cout << "\t 1. Play With Computer." << endl;
+        cout << "\t 2. Play With Other Player." << endl;
+        cout << "\t 3. Exit Game." << endl << endl;
+
+        cout << "\t Enter Your Choice: ";
+        cin >> choice;
+    
+        cout << endl;
+    
+        if(choice == 1)
+        {
+            isComputer = true;
+        
+            getline(cin, playerName2);
+            cout << "\t Enter Your Name: ";
+            getline(cin, playerName2);
+    
+            while(gameOver())
+            {
+                computerHeading();
+                displayBoard();
+                playerTurn();
+                gameOver();
+            }
+        }			
+        else if(choice == 2)
+        {
+            getline(cin, playerName1);
+            cout << "\t Enter Player 1 Name: ";
+            getline(cin, playerName1);
+        
+            cout << "\t Enter Player 2 Name: ";
+            getline(cin, playerName2);
+        
+            while(gameOver())
+            {
+                playerHeading();
+                displayBoard();
+                playerTurn();	
+                gameOver();
+            }	
+        }
+        else
+        {
+            cout << "\t Invalid Choice. Try Again." << endl;
+        }
+    
+        if(showResults == true)
+        {
+            if(turn == 'X' && isDraw == false)
+            {
+                system("cls");
+                mainHeading();
+                playerHeading();
+                displayBoard();
+                cout << "\t " << playerName2 << " [O] Wins. Congratulations" << endl;
+                system("pause");
+                showResults = false;
+            }
+            else if (turn == 'O' && isDraw == false)
+            {
+                system("cls");
+                mainHeading();
+                playerHeading();
+                displayBoard();
+        
+                if(isComputer == true)
+                {
+                    cout << "\t Computer [X] Wins." << endl;
+                    system("pause");
+                    showResults = false;
+                }
+                else
+                {
+                    cout << "\t " << playerName1 << " [X] Wins. Congratulations" << endl;
+                    system("pause");
+                    showResults = false;
+                }
+            }
+            else
+            {				
+                cout << "\t Game Draw. No One Wins. Play Again." << endl;
+                system("pause");
+                showResults = false;
+            }
+        }
+    } while(choice != 3);
+ 
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="ZodiacSigns">
+                        <h3>19. Zodiac Signs</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+
+using namespace std;
+
+int main()
+{
+    int date;
+    string month;
+    
+    cout << setw(70) << "--------------------------------" << endl;
+    cout << setw(70) << "Zodiac Signs By Sher Khan Baloch" << endl;
+    cout << setw(70) << "--------------------------------" << endl;
+    
+    cout << "Enter Month: ";
+    cin >> month;
+    
+    cout << "Enter Date: ";
+    cin >> date;
+        
+    if(month == "January")
+    {
+        if(date <= 19)
+        {
+            cout << "Zodiac: Capricornus" << endl;
+            cout << "Symbol: Goat" << endl;	
+        }
+        else if(date >= 20)
+        {
+            cout << "Zodiac: Aquarius" << endl;
+            cout << "Symbol: Water Bearer" << endl;	
+        }	
+    }
+    else if(month == "February")
+    {
+        if(date <= 18)
+        {
+            cout << "Zodiac: Aquarius" << endl;
+            cout << "Symbol: Water Bearer" << endl;	
+        }
+        else if(date >= 19)
+        {
+            cout << "Zodiac: Pisces" << endl;
+            cout << "Symbol: Fish" << endl;	
+        }	
+    }
+    else if(month == "March")
+    {
+        if(date <= 20)
+        {
+            cout << "Zodiac: Pisces" << endl;
+            cout << "Symbol: Fish" << endl;	
+        }
+        else if(date >= 21)
+        {
+            cout << "Zodiac: Aries" << endl;
+            cout << "Symbol: Ram" << endl;	
+        }	
+    }
+    else if(month == "April")
+    {
+        if(date <= 19)
+        {
+            cout << "Zodiac: Aries" << endl;
+            cout << "Symbol: Ram" << endl;	
+        }
+        else if(date >= 20)
+        {
+            cout << "Zodiac: Taurus" << endl;
+            cout << "Symbol: Bull" << endl;	
+        }	
+    }
+    else if(month == "May")
+    {
+        if(date <= 20)
+        {
+            cout << "Zodiac: Taurus" << endl;
+            cout << "Symbol: Bull" << endl;	
+        }
+        else if(date >= 21)
+        {
+            cout << "Zodiac: Gemini" << endl;
+            cout << "Symbol: Twins" << endl;	
+        }	
+    }
+    else if(month == "June")
+    {
+        if(date <= 21)
+        {
+            cout << "Zodiac: Gemini" << endl;
+            cout << "Symbol: Twins" << endl;	
+        }
+        else if(date >= 22)
+        {
+            cout << "Zodiac: Cancer" << endl;
+            cout << "Symbol: Crab" << endl;	
+        }	
+    }
+    else if(month == "July")
+    {
+        if(date <= 22)
+        {
+            cout << "Zodiac: Cancer" << endl;
+            cout << "Symbol: Crab" << endl;	
+        }
+        else if(date >= 23)
+        {
+            cout << "Zodiac: Leo" << endl;
+            cout << "Symbol: Lion" << endl;	
+        }	
+    }
+    else if(month == "August")
+    {
+        if(date <= 22)
+        {
+            cout << "Zodiac: Leo" << endl;
+            cout << "Symbol: Lion" << endl;	
+        }
+        else if(date >= 23)
+        {
+            cout << "Zodiac: Virgo" << endl;
+            cout << "Symbol: Virgin" << endl;	
+        }	
+    }
+    else if(month == "September")
+    {
+        if(date <= 22)
+        {
+            cout << "Zodiac: Virgo" << endl;
+            cout << "Symbol: Virgin" << endl;	
+        }
+        else if(date >= 23)
+        {
+            cout << "Zodiac: Libra" << endl;
+            cout << "Symbol: Balance" << endl;	
+        }	
+    }
+    else if(month == "October")
+    {
+        if(date <= 23)
+        {
+            cout << "Zodiac: Libra" << endl;
+            cout << "Symbol: Balance" << endl;	
+        }
+        else if(date >= 24)
+        {
+            cout << "Zodiac: Scorpius" << endl;
+            cout << "Symbol: Scorpion" << endl;	
+        }	
+    }
+    else if(month == "November")
+    {
+        if(date <= 21)
+        {
+            cout << "Zodiac: Scorpius" << endl;
+            cout << "Symbol: Scorpion" << endl;	
+        }
+        else if(date >= 22)
+        {
+            cout << "Zodiac: Sagittarius" << endl;
+            cout << "Symbol: Archer" << endl;	
+        }	
+    }
+    else if(month == "December")
+    {
+        if(date <= 21)
+        {
+            cout << "Zodiac: Sagittarius" << endl;
+            cout << "Symbol: Archer" << endl;;	
+        }
+        else if(date >= 22)
+        {
+            cout << "Zodiac: Capricornus" << endl;
+            cout << "Symbol: Goat" << endl;	
+        }	
+    }
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="Diamonds">
+                        <h3>20. Diamonds</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    // Half Diamond
+    for(int i = 1; i <= 10; i++)
+    {
+        for(int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    for(int i = 10; i >= 1; i--)
+    {
+        for(int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    
+    cout << endl;
+    
+    // Full Diamond
+    for(int i = 1; i <= 10; i++)
+    {
+        for(int j = 1; j <= 10-i; j++)
+        {
+            cout << " ";
+        }
+        for(int k = 1; k <= i; k++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    for(int i = 10; i >= 1; i--)
+    {
+        for(int j = 1; j <= 10-i; j++)
+        {
+            cout << " ";
+        }
+        for(int k = 1; k <= i; k++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    
+    cout << endl;
+    
+    // Full Diamond With Different Stars
+    for(int i = 1; i <= 10; i = i+2)
+    {
+        for(int j = 1; j <= 10-i; j++)
+        {
+            cout << " ";
+        }
+        for(int k = 1; k <= i; k++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    for(int i = 7; i >= 1; i = i-2)
+    {
+        for(int j = 1; j <= 10-i; j++)
+        {
+            cout << " ";
+        }
+        for(int k = 1; k <= i; k++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="Hollow-Shapes">
+                        <h3>21. Hollow Shapes</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    // Hollow Pyramid
+    for(int i = 1; i <= 10; i++)
+    {
+        // Spaces Before Stars
+        for(int j = 1; j <= 10-i; j++)
+        {
+            cout << " ";
+        }
+        // This If Will Print 1 Star and Last Line of Star When I will match condition
+        if(i == 1 || i == 10)
+        {
+            for(int k = 1; k <= i; k++)
+            {
+                cout << "* ";
+            }
+        }
+        else
+        {
+            // Left Side Line
+            cout << "*";
+            
+            // Printing Space Inside of Shape
+            for(int k = 1; k <= 2*i-3; k++) 
+            {
+                cout << " ";
+            }
+            
+            // Right Side Line
+            cout << "*";
+        }
+        cout << endl;
+    }
+    
+    cout << endl;
+    
+    // Hollow Diamond
+    for(int i = 1; i <= 10; i++)
+    {
+        for(int j = 1; j <= 10-i; j++)
+        {
+            cout << " ";
+        }
+        if(i == 1)
+        {
+            for(int k = 1; k <= i; k++)
+            {
+                cout << "* ";
+            }
+        }
+        else
+        {
+            cout << "*";
+            for(int k = 1; k <= 2*i-3; k++) 
+            {
+                cout << " ";
+            }
+            cout << "*";
+        }
+        cout << endl;
+    }
+    for(int i = 9; i >= 1; i--)
+    {
+        for(int j = 1; j <= 10-i; j++)
+        {
+            cout << " ";
+        }
+        if(i == 1)
+        {
+            for(int k = 1; k <= i; k++)
+            {
+                cout << "* ";
+            }
+        }
+        else
+        {
+            cout << "*";
+            for(int k = 1; k <= 2*i-3; k++) 
+            {
+                cout << " ";
+            }
+            cout << "*";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="Triangles">
+                        <h3>22. Triangles</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    // Triangle Pattern 01
+    for(int i = 1; i <= 5; i++)
+    {
+        for(int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    
+    cout << endl;
+    
+    // Triangle Pattern 02
+    for(int i = 5; i >= 1; i--)
+    {
+        for(int j = i; j >= 1; j--)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    
+    cout << endl;
+    
+    // Trianle Pattern 03
+    for(int i = 1; i <= 5; i++)
+    {
+        for(int j = 1; j <= 5-i; j++)
+        {
+            cout << " ";
+        }
+        for(int k = 1; k <= i; k++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    cout << endl;
+    
+    // Trianle Pattern 04
+    for(int i = 1; i <= 5; i++)
+    {
+        for(int j = 1; j <= 5-i; j++)
+        {
+            cout << " ";
+        }
+        for(int k = 1; k <= i; k++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    
+    cout << endl;
+    
+    // Triangle Pattern 05
+    for(int i = 5; i >= 1; i--)
+    {
+        for(int j = 1; j <= 5-i; j++)
+        {
+            cout << " ";
+        }
+        for(int k = 1; k <= i; k++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    cout << endl;
+
+    // Triangle Pattern 06
+    for(int i = 5; i >= 1; i--)
+    {
+        for(int j = 1; j <= 5-i; j++)
+        {
+            cout << " ";
+        }
+        for(int k = 1; k <= i; k++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+                </div>
+                <!-- Main Content End -->
+            </main>
+
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; CodeX 2024</div>
+                        <div>
+                            <a href="#">Back To Top</a>
+                            &middot;
+                            <a href="https://sherkhanbaloch.github.io/Portfolio/" target="_blank">Developer's
+                                Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.js"></script>
+
+    <!-- Prism JS -->
+    <script src="../js/prism.js"></script>
+
+    <!-- Side Menu Scrpts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="../js/scripts.js"></script>
+</body>
+
+</html>

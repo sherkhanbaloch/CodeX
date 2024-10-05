@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Index Page CSS: Starts */
+#main-home-section {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-home-inner-section {
+    border: 1px solid black;
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* Index Page CSS: Ends */
+
+ul,
+ol {
+    list-style-position: inside;
+}
