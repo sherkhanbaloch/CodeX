@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>C++ Cheatsheet - CodeX</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/prism.css">
+
+    <!-- Side Menu CSS -->
+    <link href="../css/styles.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        crossorigin="anonymous"></script>
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="../images/fly.png" type="image/x-icon">
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../images/fly.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            CodeX</a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar-->
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">C++ Programs</div>
+                        <a class="nav-link active" href="#introduction">
+                            <div class="sb-nav-link-icon"><i class="fa fa-regular fa-file-code"></i></div>
+                            Introduction
+                        </a>
+                        <a class="nav-link active" href="#HelloWorld">
+                            <div class="sb-nav-link-icon"><i class="fa fa-regular fa-file-code"></i></div>
+                            Hello World
+                        </a>
+                        <a class="nav-link active" href="#Variables-Input-Comments">
+                            <div class="sb-nav-link-icon"><i class="fa fa-regular fa-file-code"></i></div>
+                            Variables Input Comments
+                        </a>
+                        <a class="nav-link active" href="#Arithmetic-&-Assignment-Operators">
+                            <div class="sb-nav-link-icon"><i class="fa fa-regular fa-file-code"></i></div>
+                            Arithmetic & Assignment Operators
+                        </a>
+                        <a class="nav-link active" href="#Relational-&-Logical-Operators">
+                            <div class="sb-nav-link-icon"><i class="fa fa-regular fa-file-code"></i></div>
+                            Relational & Logical Operators
+                        </a>
+                        <a class="nav-link active" href="#Increment-Decrement-&-Output-Formatting">
+                            <div class="sb-nav-link-icon"><i class="fa fa-regular fa-file-code"></i></div>
+                            Increment Decrement & Output Formatting
+                        </a>
+                        <a class="nav-link active" href="#If-Else-Condition">
+                            <div class="sb-nav-link-icon"><i class="fa fa-regular fa-file-code"></i></div>
+                            If Else Condition
+                        </a>
+                        <a class="nav-link active" href="#For-and-While-Loops">
+                            <div class="sb-nav-link-icon"><i class="fa fa-regular fa-file-code"></i></div>
+                            For and While Loops
+                        </a>
+                        <a class="nav-link active" href="#Do-While-and-Array">
+                            <div class="sb-nav-link-icon"><i class="fa fa-regular fa-file-code"></i></div>
+                            Do While and Array
+                        </a>
+                        <a class="nav-link active" href="#Arrays">
+                            <div class="sb-nav-link-icon"><i class="fa fa-regular fa-file-code"></i></div>
+                            Arrays
+                        </a>
+                        <a class="nav-link active" href="#Bitwise-Operators">
+                            <div class="sb-nav-link-icon"><i class="fa fa-regular fa-file-code"></i></div>
+                            Bitwise Operators
+                        </a>
+                        <a class="nav-link active" href="#Pointers">
+                            <div class="sb-nav-link-icon"><i class="fa fa-regular fa-file-code"></i></div>
+                            Pointers
+                        </a>
+                        <div class="sb-sidenav-menu-heading">C++ Programs</div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <!-- Heading Start -->
+                <div class="container-fluid bg-secondary py-3 mb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 text-center">
+                            <h1 class="display-6 text-white">C++ Cheat Sheet</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- Heading End -->
+
+                <!-- Main Content Start -->
+                <div class="container">
+                    <h1 class="h2">C++</h1>
+                    <section class="my-3" id="introduction">
+                        <h2>Introduction:</h2>
+                        <p>C++ is an object-oriented programming language which gives a clear structure to programs and
+                            allows code to be reused, lowering development costs. C++ is portable and can be used to
+                            develop applications that can be adapted to multiple platforms. C++ is fun and easy to
+                            learn!</p>
+                        <p> &#8620; Text Editiors: Visual Studio Code, Dev C++, etc.</p>
+                        <p> &#8620; Extension: Save into .cpp</p>
+                    </section>
+
+                    <section class="my-3" id="HelloWorld">
+                        <h3>1. Hello World</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    cout << "Hello C++";	
+    
+    cout << "--------------------------------------- \n";
+    cout << "\t\t Bio Data \n";
+    cout << "--------------------------------------- \n";
+    cout << "Name: \t\t Sher Khan Baloch. \n";
+    cout << "Department: \t BS Computer Science. \n";
+    cout << "Class: \t\t BSCS (5). \n";
+    cout << "Address: \t Larkana, Sindh, Pakistan. \n";
+    cout << "Institute: \t SZABIST University Larkana. \n";
+    
+    return 0;
+}
+                                </code></pre>
+                    </section>
+
+                    <section class="my-3" id="Variables-Input-Comments">
+                        <h3>2. Variables Input Comments</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    int num1;
+    int num2;
+    int sum;
+    
+    cout << "Enter First Number: ";
+    cin >> num1;
+    
+    cout << "Enter Second Number: ";
+    cin >> num2;
+    
+    sum = num1 + num2;
+    
+    cout << "Addition: " << sum;
+    
+    // This is Single Line Comment.
+    
+    /*
+        This is Multi Line Comment.
+    */
+    
+    cout << "\nData Type: Short Int, Size: " << sizeof(short int) << " Bytes";
+    cout << "\nData Type: Int, Size: " << sizeof(int) << " Bytes";
+    cout << "\nData Type: Float, Size: " << sizeof(float) << " Bytes";
+    cout << "\nData Type: Double, Size: " << sizeof(double) << " Bytes";
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="Arithmetic-&-Assignment-Operators">
+                        <h3>3. Arithmetic & Assignment Operators</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    
+    int a, b;
+    int result;
+    
+    cout << "Enter First Number: ";
+    cin >> a;
+    
+    cout << "Enter Second Number: ";
+    cin >> b;
+    
+    // Arithmetic Operators
+    cout << "\nThe Addition of A and B is: " << a + b;
+    cout << "\nThe Subtraction of A and B is: " << a - b;
+    cout << "\nThe Multiplication of A and B is: " << a * b;
+    cout << "\nThe Division of A and B is: " << a / b;
+    
+    cout << "\n\n";
+    
+    // Assignment Operators
+    a += b;
+    cout << "\nThe A += B of A is: " << a;
+    a -= b;
+    cout << "\nThe A -= B of A is: " << a;
+    
+    cout << "\n\n";
+    
+    return 0;
+}
+                            
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="Relational-&-Logical-Operators">
+                        <h3>4. Relational & Logical Operators</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    int a = 5;
+    int b = 2;
+    int c = 1;
+    int d = 2;
+    float result;
+    
+    // Checking Precedence: (), /, *, -, + 
+    result = ( (a + b) - c / d + (c + d) );
+    
+    cout << "Result: " << result;
+    
+    // Relational Operators	
+    cout << "\n" << a << " == " << b << " = " << (a == b);
+    cout << "\n" << a << " > " << b << " = " << (a > b);
+    cout << "\n" << a << " < " << b << " = " << (a < b);
+    cout << "\n" << a << " >= " << b << " = " << (a >= b);
+    cout << "\n" << a << " <= " << b << " = " << (a <= b);
+    cout << "\n" << a << " != " << b << " = " << (a != b);
+    
+    // Logical Opperators
+    cout << "\n" <<	(a  < b ) && (a > 1);
+    cout << "\n" <<	(a  < b ) || (a > b);
+    cout << "\n" <<	!( (a  < b ) || (a > b) );
+
+    return 0;
+}
+                                </code></pre>
+                    </section>
+
+                    <section class="my-3" id="Increment-Decrement-&-Output-Formatting">
+                        <h3>5. Increment Decrement & Output Formatting</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+#include &lt;stdio.h&gt;
+
+#include &lt;iomanip&gt;
+#include &lt;conio.h&gt;
+
+using namespace std;
+
+int main()
+{
+    int a = 30;
+    int b = 50;
+    a = a++;
+    b = a;
+    b++;
+    --a;
+    a += b;
+    
+    cout << ++b << endl;
+    cout << a-- << endl;
+    
+    cout << "a = " << ++a << endl;
+    cout << "a = " << a++ << endl;
+    cout << "a = " << a-- << endl;
+    
+    int i, num;
+    
+    cout << "Enter Any Number To Generate Table: ";
+    cin >> num;
+    
+    cout << "\nTable of " << num << " is: \n\n";
+    
+    for(i = 0; i <=10; i++)
+    {
+        cout << num << setw(3) << "*" << setw(4) << "=" << setw(4) << num * i << endl;
+    }
+    
+    printf("This is C Language Function.");
+    
+    int myNum;
+    scanf("%d", &myNum);
+    printf("Entered Number Is: %d", myNum);
+        
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="If-Else-Condition">
+                        <h3>6. If Else Condition</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    int a = 269;
+    int b = 25;
+    
+    // Bitwise Operators		
+    cout << (a&b) << endl;
+    cout << (a|b) << endl;
+    
+    int age;
+    cout << "Enter Your Age: ";
+    cin >> age;
+    
+    if(age > 0)
+    {
+        if(age >= 18)
+        {
+            cout << "You Can Cast Vote.";
+        }
+        else
+        {
+            cout << "Please Wait For To Be Turn In 18.";	
+        }
+    }
+    else
+    {
+        cout << "Enter Valid Age.";
+    }
+    
+    string userName;
+    string password;
+    
+    cout << "Enter User Name: ";
+    getline(cin, userName);
+    
+    cout << "Enter Password: ";
+    getline(cin, password);
+    
+    if(userName == "Sher Khan" && password == "123")
+    {
+        cout << "Welcome Mr. " << userName;
+    }
+    else
+    {
+        cout << "Enter Valid User Name or Password.";
+    }
+    
+    return 0;
+}                           
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="For-and-While-Loops">
+                        <h3>7. For and While Loops</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    
+    int a=1;
+    int b;
+    while( a<= 10)
+    {
+        
+        b = 1;
+        while(b<=a)
+        {
+            cout<<"*";
+            b++;
+        }
+        
+        a++;
+        cout<<"\n";
+        
+    }
+    
+    
+    /*
+    
+    int i,j;
+    for(i=1;  i <= 10;  i++)
+    {
+        for(j = 1;  j<=i;  j++)
+        {
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+    
+    */
+    
+    
+/*	
+    int a,t,s,e;
+    
+    cout<<"Enter any number to generate table: ";
+    cin>>t;
+    
+    cout<<"\nEnter number to start from table: ";
+    cin>>s;
+    
+    cout<<"\nEnter number to end table: ";
+    cin>>e;
+    
+    
+    for(a = s;  a <= e;  a++)
+    {
+        cout << t << " * " << a << " = " << (t*a) << endl;	
+    }
+    
+*/	
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="Do-While-and-Array">
+                        <h3>8. Do While and Array</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    // Do While Loop
+    int a = 1;
+    do
+    {
+        cout << a << endl;
+        a++;
+        // a = a + 2;
+    } while(a <= 10);
+
+    // Custom Series: 1 3 4 6 8 9 10
+    for(int i = 1; i <= 10; i++)
+    {
+        if(i == 2 || i == 5 || i == 7)
+        {
+            continue;
+        }
+        else
+        {
+            cout << i << " ";
+        }
+    }
+    
+    // Escape Every 4 Number (Method 01)
+    int count = 0;
+    for(int j = 1; j <= 50; j++)
+    {
+        count++;
+        
+        if(count == 4)
+        {
+            count = 0;
+        }
+        else
+        {
+            cout << j << " ";
+        }
+    }
+    
+    // Escape Every 4 Number (Method 02)
+    for(int a = 1; a <= 50; a++)
+    {
+        if(a%4 == 0)
+        {
+            continue;
+        }
+        cout << a << " ";
+    }
+    
+    // Array
+    int arr[10];
+    arr[0] = 11;
+    arr[1] = 22;
+    arr[2] = 33;
+    arr[3] = 44;
+    arr[4] = 55;
+    arr[5] = 66;
+    arr[6] = 77;
+    arr[7] = 88;
+    arr[8] = 99;
+    arr[9] = 100;
+    
+    cout << arr[2];
+    cout << arr[6];
+    cout << arr[9];
+    
+    int index;
+    for(index = 0; index < 10; index++)
+    {
+        cout << arr[index] << endl;
+        cout << "arr[" << index << "]" << " = " << arr[index] << endl;
+    }
+    
+    int size;
+    cout << "Enter Array Size: ";
+    cin >> size;
+    
+    int arr[size];
+    
+    int index;
+    
+    // For Input In Array
+    for(index = 0; index < size; index++)
+    {
+        cout << "Enter Value at Array [" << index << "] = ";
+        cin >> arr[index];
+        cout << endl;
+    }
+    
+    // For Printing Array
+    for(index = 0; index < size; index++)
+    {
+        cout << arr[index] << endl;
+    }
+    
+    // Size of Array
+    int length = sizeof(arr)/sizeof(arr[0]);
+    int length = sizeof(arr)/sizeof(arr[0])-1;
+    cout << length;
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="Arrays">
+                        <h3>9. Arrays</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    /*
+    int numbers[5] = {3, 7, 12, 24, 45};
+    // Result: 3 7 12 24 45
+    
+    int numbers[] = {3, 7, 12, 24, 45};
+    // Result: 3 7 12 24 45
+
+    int numbers[5] = {3, 7};
+    // Result: 3 7 0 0 0
+    
+    int numbers[1000] = {0};
+    // Result: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    
+    for(int i = 0; i < sizeof(numbers)/sizeof(numbers[0]); i++)
+    {
+        cout << numbers[i] << " ";
+    }
+    */
+    
+    const int size = 5;
+    
+    int arr[size];
+    
+    for(int i = 0; i < size; i++)
+    {
+        arr[i] = i * i;
+    }
+    
+    cout << "Elements \t Square" << endl;
+    cout << "=========\t=======" << endl;
+    
+    for(int i = 0; i < size; i++)
+    {
+        cout << i << "\t\t";
+        cout << arr[i] << endl;
+    }
+    
+    /*
+    Elements         Square
+    =========       =======
+    0               0
+    1               1
+    2               4
+    3               9
+    4               16
+    */
+    
+    return 0; 
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="Bitwise-Operators">
+                        <h3>10. Bitwise Operators</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    int a = 20;
+    int b = 50;
+    int c = 40;
+    int res;
+    
+    /*
+    AND &
+    
+        128		64		32		16		8		4		2		1
+    
+a =		0		0		0		1		0		1		0		0
+b =		0		0		1		1		0		0		1		0
+        ---------------------------------------------------------
+a&b		0		0		0		1		0		0		0		0
+c =		0		0		1		0		1		0		0		0
+        ---------------------------------------------------------
+(a&b)&c 0		0		0		0		0		0		0		0
+    
+    Add Those Numbers Where Bit is 1
+    */
+    
+    res = ((a & b) & c);
+    cout << res << endl;
+    
+    /*
+    OR |
+    
+        128		64		32		16		8		4		2		1
+    
+a =		0		0		0		1		0		1		0		0
+b =		0		0		1		1		0		0		1		0
+        ---------------------------------------------------------
+a|b 	0		0		1		1		0		1		1		0
+c =		0		0		1		0		1		0		0		0
+        ---------------------------------------------------------
+(a|b)&c	0		0		1		0		0		0		0		0
+    
+    */
+    res = ((a | b) & c);
+    cout << res << endl;
+    
+    a = 10;
+    /*
+    Shift Left	<<
+        128		64		32		16		8		4		2		1
+a =		0		0		0		0		1		0		1		0
+        ---------------------------------------------------------
+a<<2	0		0		1		0		1		0		0		0
+
+    */
+    res = (a << 2);	
+    cout << res << endl;
+    
+    int x = 10;
+    int y = 5;
+    cout << (x << y) << endl;
+    
+    a = 10;
+    /*
+    Shift Right	>>
+        128		64		32		16		8		4		2		1
+a =		0		0		0		0		1		0		1		0
+        ---------------------------------------------------------
+a>>2	0		0		0		0		0		0		1		0		0						
+
+    */
+    res = (a >> 2);	
+    cout << res << endl;
+    
+    a = 10;
+    b = 40;
+    /*	
+    XOR ^
+    
+        128		64		32		16		8		4		2		1
+    
+a =		0		0		0		0		1		0		1		0
+b =		0		0		1		0		1		0		0		0
+        ---------------------------------------------------------
+a^b 	0		0		1		0		0		0		1		0
+    
+    */
+    res = (a ^ b);
+    cout << res << endl;
+    
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                    <section class="my-3" id="Pointers">
+                        <h3>11. Pointers</h3>
+                        <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    int x = 10;
+    
+    // Ways of Declaring Pointer
+    // int *a;
+    int* a;
+    
+    cout << "The Value of X = " << x << endl;
+    cout << "The Address of X = " << &x << endl;
+    
+    a = &x;
+    
+    cout << "The Value of A = " << a << endl;
+    cout << "The Address of A = " << &a << endl;
+    
+    // We Are Getting X Value of By Pointer
+    cout << "The Value of *A = " << *a << endl;
+    
+    return 0;
+}
+                            </code></pre>
+                    </section>
+
+                </div>
+                <!-- Main Content End -->
+            </main>
+
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; CodeX 2024</div>
+                        <div>
+                            <a href="#">Back To Top</a>
+                            &middot;
+                            <a href="https://sherkhanbaloch.github.io/Portfolio/" target="_blank">Developer's
+                                Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.js"></script>
+
+    <!-- Prism JS -->
+    <script src="../js/prism.js"></script>
+
+    <!-- Side Menu Scrpts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="../js/scripts.js"></script>
+</body>
+
+</html>
