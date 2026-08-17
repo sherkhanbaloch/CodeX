@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HTML Cheatsheet - CodeX</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Prism.css -->
+    <link rel="stylesheet" href="../css/prism.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">CodeX</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Home -->
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Home</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Cheatsheet Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCheatsheet"
+                    aria-expanded="true" aria-controls="collapseCheatsheet">
+                    <i class="fas fa-fw fa-list-ul"></i>
+                    <span>Cheat Sheets</span>
+                </a>
+                <div id="collapseCheatsheet" class="collapse" aria-labelledby="headingCheatsheet"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Cheatsheets:</h6>
+                        <a class="collapse-item active" href="HTML-Cheatsheet.html">HTML 5</a>
+                        <a class="collapse-item" href="CSS-Cheatsheet.html">CSS 3</a>
+                        <a class="collapse-item" href="JavaScript-Cheatsheet.html">JavaScript</a>
+                        <a class="collapse-item" href="CPP-Cheatsheet.html">C++</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Notes Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNotes"
+                    aria-expanded="true" aria-controls="collapseNotes">
+                    <i class="fas fa-fw fa-book"></i>
+                    <span>Notes</span>
+                </a>
+                <div id="collapseNotes" class="collapse" aria-labelledby="headingNotes" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">PDF Notes</h6>
+                        <a class="collapse-item" href="../Notes/FoP-In-C++-Notes-By-Sher-Khan-Baloch.pdf">C++ (FoP)</a>
+                        <a class="collapse-item" href="../Notes/OOP-In-Java-Notes-By-Sher-Khan-Baloch.pdf">Java
+                            (OOP)</a>
+                        <a class="collapse-item"
+                            href="../Notes/Assembly-Language-Notes-By-Sher-Khan-Baloch.pdf">Assembly
+                            8086</a>
+                        <a class="collapse-item"
+                            href="../Notes/Database-Systems-In-SQL-Notes-By-Sher-Khan-Baloch.pdf">SQL
+                            Server</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Programs Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePrograms"
+                    aria-expanded="true" aria-controls="collapsePrograms">
+                    <i class="fas fa-fw fa-code"></i>
+                    <span>Programs</span>
+                </a>
+                <div id="collapsePrograms" class="collapse" aria-labelledby="headingPrograms"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Code Snippets</h6>
+                        <a class="collapse-item" href="../Programs/CPP-Programs.html">C++</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">0</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">No New Alerts</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">0</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Message Center
+                                </h6>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">No More Messages</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Sher Khan Baloch</span>
+                                <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <hr>
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 text-center">HTML Cheatsheet</h1>
+
+                    <hr>
+
+                    <!-- Collapsable Card Example -->
+                    <div class="card shadow mb-4">
+                        <!-- Card Header - Accordion -->
+                        <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse"
+                            role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                            <h6 class="m-0 font-weight-bold text-primary">Contents</h6>
+                        </a>
+                        <!-- Card Content - Collapse -->
+                        <div class="collapse show" id="collapseCardExample">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12">
+                                        <ol>
+                                            <li><a href="#introduction">Introduction</a></li>
+                                            <li><a href="#comment">Comment Tag</a></li>
+                                            <li><a href="#anchor">Anchor Tag</a></li>
+                                            <li><a href="#abbr">Abbr Tag</a></li>
+                                            <li><a href="#acronym">Acronym Tag</a></li>
+                                            <li><a href="#address">Address Tag</a></li>
+                                            <li><a href="#article">Article Tag</a></li>
+                                            <li><a href="#area">Area Tag</a></li>
+                                            <li><a href="#aside">Aside Tag</a></li>
+                                            <li><a href="#audio">Audio Tag</a></li>
+                                            <li><a href="#bold">Bold Tag</a></li>
+                                            <li><a href="#base">Base Tag</a></li>
+                                            <li><a href="#bdo">Bdo Tag</a></li>
+                                            <li><a href="#blockquote">Blockquote Tag</a></li>
+                                            <li><a href="#body">Body Tag</a></li>
+                                            <li><a href="#button">Button Tag</a></li>
+                                            <li><a href="#caption">Caption Tag</a></li>
+                                            <li><a href="#cite">Cite Tag</a></li>
+                                            <li><a href="#code">Code Tag</a></li>
+                                            <li><a href="#col">Col Tag</a></li>
+                                            <li><a href="#colgroup">Colgroup Tag</a></li>
+                                        </ol>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <ol start="22">
+                                            <li><a href="#data">Data Tag</a></li>
+                                            <li><a href="#datalist">Datalist Tag</a></li>
+                                            <li><a href="#dd">DD Tag</a></li>
+                                            <li><a href="#del">Del Tag</a></li>
+                                            <li><a href="#details">Details, Summary Tag</a></li>
+                                            <li><a href="#dfn">DFN Tag</a></li>
+                                            <li><a href="#dialog">Dialog Tag</a></li>
+                                            <li><a href="#div">Div Tag</a></li>
+                                            <li><a href="#IEM">I, EM Tag</a></li>
+                                            <li><a href="#embed">Embed Tag</a></li>
+                                            <li><a href="#fieldset">Fieldset, Legend Tag</a></li>
+                                            <li><a href="#figure">Figure, Figcaption Tag</a></li>
+                                            <li><a href="#footer">Footer Tag</a></li>
+                                            <li><a href="#form">Form Tag</a></li>
+                                            <li><a href="#header">Header Tag</a></li>
+                                            <li><a href="#hr">HR Tag</a></li>
+                                            <li><a href="#iframe">iFrame, Sandbox Tag</a></li>
+                                            <li><a href="#img">Img, Srcset Tag</a></li>
+                                            <li><a href="#input">Input Tag</a></li>
+                                            <li><a href="#label">Label Tag</a></li>
+                                            <li><a href="#list">Ul, Ol, Li Tag</a></li>
+                                        </ol>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <ol start="43">
+                                            <li><a href="#main">Main Tag</a></li>
+                                            <li><a href="#mark">Mark Tag</a></li>
+                                            <li><a href="#meter_progress">Meter and Progress Tag</a></li>
+                                            <li><a href="#nav">Nav Tag</a></li>
+                                            <li><a href="#noscript">Noscript Tag</a></li>
+                                            <li><a href="#object">Object Tag</a></li>
+                                            <li><a href="#select_optgroup_option">Select, Optgroup, Option Tag</a></li>
+                                            <li><a href="#meta">Meta Tag</a></li>
+                                            <li><a href="#picture">Picture, Source Tag</a></li>
+                                            <li><a href="#pre">Pre Tag</a></li>
+                                            <li><a href="#ruby">Ruby Tag</a></li>
+                                            <li><a href="#section">Section Tag</a></li>
+                                            <li><a href="#script">Script Tag</a></li>
+                                            <li><a href="#span">Span Tag</a></li>
+                                            <li><a href="#style">Style Tag</a></li>
+                                            <li><a href="#sub_sup">Sub, Sup Tag</a></li>
+                                            <li><a href="#svg">SVG Tag</a></li>
+                                            <li><a href="#table">Table Tag</a></li>
+                                            <li><a href="#video">Video Tag</a></li>
+                                            <li><a href="#shortcut">Shortcut Icon</a></li>
+                                            <li><a href="#marquee">Marquee Tag</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="my-3" id="introduction">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Introduction</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Hyper Text Markup Language also Know as HTML is used to create Web Pages or Websites.
+                                    It
+                                    is developed by Tim Berners-Lee in 1993. It is a service which runs Web Pages.</p>
+                                <p> - Text Editiors: NotePad, Notepad++, Sublime Text, VS Code etc.</p>
+                                <p> - Output: On any web browser.</p>
+                                <p> - Extension: Save into .html or .htm</p>
+
+                                <h6>HTML Tags:</h6>
+                                <p> There are two types of tags in HTML</p>
+                                <p> 1. Paired Tags: Which starts and close. Like &lt;html&gt; &lt;/html&gt;, &lt;a&gt;
+                                    &lt;/a&gt;</p>
+                                <p> 2. Unpaired Tags: Which starts but don't close. Like &lt;br&gt; &lt;hr&gt;,
+                                    &lt;img&gt;</p>
+
+                                <h6>Boiler Plate Code:</h6>
+                                <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CodeX&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;CodeX&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="comment">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Comment Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre
+                                    class="language-html"> <code>&lt;!-- This is comment. Code or Text in comment won't appear in brower. --&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="anchor">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Anchor Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;a href="About.html"&gt;About Us&lt;/a&gt;
+                    
+&lt;a href="https://www.facebook.com/" target="_blank"&gt;Go to facebook&lt;/a&gt;
+                    
+&lt;a href="https://www.facebook.com/" title="Click here to open facebook"&gt;Open facebook&lt;/a&gt;
+        
+&lt;a href="#"&gt;Go to Top&lt;/a&gt;
+        
+&lt;a href="images/photo.jpg" download="photo" hreflang="en"&gt;Download Here&lt;/a&gt;
+        
+&lt;p&gt; &lt;a href="#computer"&gt;Computer&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt; &lt;a href="#laptop"&gt;Laptop&lt;/a&gt; &lt;/p&gt;
+        
+&lt;h1&gt; &lt;a name="computer"&gt;Computer&lt;/a&gt; &lt;/h1&gt;
+&lt;h1&gt; &lt;a name="laptop"&gt;Laptop&lt;/a&gt; &lt;/h1&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="abbr">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Abbr Tag (Abbreviation Tag)</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre
+                                    class="language-html"><code>&lt;abbr title="Pen Drive"&gt;PD&lt;/abbr&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="acronym">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary"> Acronym Tag (Abbreviation Tag)</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre
+                                    class="language-html"><code>&lt;acronym title="United Kingdom"&gt;UK&lt;/acronym&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="address">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Address Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;address&gt;
+    Author: Sher Khan Baloch.
+    &lt;a href="mailto: admin@codex.com"&gt;Email: admin@codex.com&lt;/a&gt;
+    Visit us at: &lt;a href="https://www.sherkhanbaloch.com"&gt;www.sherkhanbaloch.com&lt;/a&gt;
+&lt;/address&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="article">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Article Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;article style="width: 300px; border: 2px solid gray; padding: 10px; border-radius: 10px; margin: 20px;"&gt;
+    &lt;img src="img/img.jpeg" alt="article-image"&gt;
+    &lt;h1&gt;This is article heading.&lt;/h1&gt;
+    &lt;p&gt;this is article paragraph.&lt;/p&gt;
+    &lt;time&gt; 11/07/2021 02:31 PM&lt;/time&gt;
+    &lt;address&gt;Author: Sher Khan Baloch.&lt;/address&gt;
+&lt;/article&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="area">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Area Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;img src="img/image.jpeg" usemap="#universe" alt=""&gt;
+&lt;map name="universe"&gt;
+    &lt;area shape="ract" coords="left, top, right, bottom" href="saturn.html" title="Click Me To See Saturn Info:" alt=""&gt;
+&lt;/map&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="aside">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Aside Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;aside style="width: 25px; float: left; background-color: gray; color: white; padding: 10px;"&gt;
+    &lt;h1&gt;This is aside heading.&lt;/h1&gt;
+    &lt;p&gt;This is aside paragraph.&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="audio">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Audio Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;audio controls autoplay&gt;
+    &lt;source src="Song.mp3" type="audio/mp3"&gt;
+&lt;/audio&gt;
+                
+&lt;audio controls loop&gt;
+    &lt;source src="Song.mp3" type="audio/mp3"&gt;
+&lt;/audio&gt;
+                
+&lt;audio controls muted&gt;
+    &lt;source src="Song.mp3" type="audio/mp3"&gt;
+&lt;/audio&gt;
+                
+&lt;audio controls preload="auto"&gt;
+    &lt;source src="Song.mp3" type="audio/mp3"&gt;
+&lt;/audio&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="bold">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Bold Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;b&gt; This Is Bold Line.&lt;/b&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="base">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Base Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;!-- Use This Code In Head Tag --&gt;
+&lt;base href="Media\Images\"&gt;
+        
+&lt;!-- Use This Code In Body Tag --&gt;
+&lt;img src="img.jpeg" alt=""&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="bdo">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Bdo Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;bdo dir="auto"&gt;This is Auto Direction BDO Tag.&lt;/bdo&gt;
+
+&lt;bdo dir="ltr"&gt;This is Left To Right Direction BDO Tag.&lt;/bdo&gt;
+
+&lt;bdo dir="rtl"&gt;This is Right To Left Direction BDO Tag.&lt;/bdo&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="blockquote">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Blockquote Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;!-- To Know From Article Is Taken. --&gt;
+&lt;blockquote cite="articleLocation"&gt;
+    &lt;h2&gt;Heading.&lt;/h1&gt;
+    &lt;p&gt;Paragraph.&lt;/p&gt;
+&lt;/blockquote&gt;
+</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="body">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Body Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;body bgcolor="gray"&gt;;  &lt;/body&gt; &lt;!-- Background Color of Complete Webpage. --&gt;
+                        
+&lt;body background="img/image.jpeg"&gt; &lt;/body&gt; &lt;!-- Background Image of Complete Webpage. --&gt;
+                        
+&lt;body text="red"&gt;  &lt;/body&gt; &lt;!-- Text Color of Complete Webpage. --&gt;
+                        
+&lt;body link="green"&gt;  &lt;/body&gt; &lt;!-- Link Color of Complete Webpage. --&gt;
+                        
+&lt;body vlink="yellow"&gt;  &lt;/body&gt; &lt;!-- Visited Link Color of Complete Webpage. --&gt;
+                        
+&lt;body alink="blue"&gt;  &lt;/body&gt;; &lt;!-- Active Link Color of Complete Webpage. --&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="button">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Button Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;button type="button" name="button" onclick="alert('Thanks For Joining Us.')"&gt; Click Me &lt;/button&gt;
+                    
+&lt;button type="submit" name="submit"&gt; This is Submit Button &lt;/button&gt;
+                    
+&lt;button type="reset" name="reset"&gt; This Is Reset Button &lt;/button&gt;
+
+&lt;button type="button" disabled&gt; This is disabled Button &lt;/button&gt;
+
+&lt;button type="button" accesskey="r"&gt; ALT + R is shortcut for this button  &lt;/button&gt;
+</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="caption">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Caption Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;table&gt;
+    &lt;caption&gt; This is table caption. &lt;/caption&gt;
+&lt;/table&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="cite">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Cite Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre
+                                    class="language-html"><code>&lt;p&gt; &lt;cite&gt;CodeX&lt;/cite&gt; By Sher Khan Baloch.&lt;/p&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="code">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Code Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;p&gt;This is JavaScript Code.
+    &lt;code&gt;
+        var a = 5;
+            function myFunc(){
+                Console.log(a);
+            }
+    &lt;/code&gt;
+&lt;/p&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="col">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Col Tag (For More Columns)</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;table&gt;
+    &lt;caption&gt;This is caption.&lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col span="1" style="background-color: red;"&gt;
+    &lt;/colgroup&gt;
+&lt;/table></code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="colgroup">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Colgroup Tag (For Few Columns)</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;table&gt;
+    &lt;caption&gt;This is caption.&lt;/caption&gt;
+    &lt;colgroup span="1" style="background-color: red;"&gt; &lt;/colgroup&gt;
+&lt;/table></code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="data">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Data Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;!-- Show Different Value To Front Page and Server. --&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;data value="101"&gt;Hair Oil&lt;/data&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="datalist">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Datalist Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;input list="cities"&gt;
+&lt;datalist id="cities"&gt;
+    &lt;option value="Larkana"&gt;&lt;/option&gt;
+    &lt;option value="Karachi"&gt;&lt;/option&gt;
+    &lt;option value="Lahore"&gt;&lt;/option&gt;
+    &lt;option value="Islamabad"&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+&lt;input type="submit" value="Submit"&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="dd">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">DD Tag (Definition)</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;dl&gt;
+    &lt;dt&gt;Computer&lt;/dt&gt;
+    &lt;dd&gt;Computer is an electronic machine which receive input, process it, give output and store it.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="del">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Del Tag (Delete)</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;p&gt;We will go to the &lt;del cite="Karachi is so far from here." datetime="01-08-2024 10:52:00"&gt;Karachi&lt;/del&gt;
+    &lt;ins&gt;Larkana&lt;/ins&gt;
+&lt;/p&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="details">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Details, Summary Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;details open&gt;
+    &lt;summary&gt;Computer&lt;/summary&gt;
+    &lt;p&gt;Computer is an electronic machine which receive input, process it, give output and store it.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="dfn">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">DFN Tag (Definition)</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;!-- Preview In Italic --&gt;
+&lt;p&gt;I am &lt;dfn title="Sher Khan Baloch"&gt;SKB&lt;/dfn&gt;&lt;/p&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="dialog">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Dialog Tag (Pop Box)</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;dialog open&gt;Welcome&lt;/dialog&gt;
+&lt;p&gt;This is Paragraph&lt;/p&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="div">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Div Tag (Division)</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;!-- Most Important, Valuable, and Main Tag For Building Websites. --&gt;
+&lt;div&gt;
+    &lt;p&gt;Welcome To CodeX&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="IEM">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">I and EM Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;em&gt;HTML&lt;/em&gt;
+&lt;i&gt;Markup Language&lt;/i&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="embed">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Embed Tag (Multi-Media)</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre
+                                    class="language-html"><code>&lt;embed src="Video.mp4" type="video/mp4" width="500px"&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="fieldset">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Fieldset, Legend Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;fieldset&gt;
+    &lt;legend&gt;Personal Information:&lt;/legend&gt;
+&lt;/fieldset&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="figure">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Figure, Figcaption Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;figure&gt;
+    &lt;img src="Moen-Jo-Daro.jpeg" alt="Moen-Jo-Daro-Image" width="100%"&gt;
+    &lt;figcaption&gt;Moen Jo Daro, Larkana, Sindh, Pakistan&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="footer">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Footer Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;footer&gt;
+    &lt;p&gt;Author: &lt;em&gt;Sher Khan Baloch&lt;/em&gt;&lt;/p&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+&lt;/footer&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="form">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Form Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;form action="Thank.html" name="login-form" method="post" autocomplete="on" novalidate&gt;
+    First Name: &lt;input type="text"&gt;
+    Last Name: &lt;input type="text"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="header">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Header Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;header&gt;
+    CodeX
+    &lt;a href="#"&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+&lt;/header&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="hr">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">HR Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;p&gt;First Paragraph&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Second Paragraph&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Third Paragraph&lt;/p&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="iframe">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">iFrame Tag With Sandbox</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;!-- Sandbox: Used For The Restrictions --&gt;
+&lt;iframe src="Gallery.html" width="400px" name="myFrame" sandbox="allow-same-origin"&gt;&lt;/iframe&gt;
+
+&lt;iframe src="Gallery.html" width="400px" name="myFrame" sandbox="allow-scripts"&gt;&lt;/iframe&gt;
+
+&lt;iframe src="Gallery.html" width="400px" name="myFrame" sandbox="allow-top-navigation"&gt;&lt;/iframe&gt;
+
+&lt;iframe src="Gallery.html" width="400px" name="myFrame" sandbox="allow-popups"&gt;&lt;/iframe&gt;
+
+&lt;iframe src="Gallery.html" width="400px" name="myFrame" sandbox="allow-forms"&gt;&lt;/iframe&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="img">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Img Tag With Srcset</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre
+                                    class="language-html"><code>&lt;img src="Image.jpeg" width="300px" alt="Alternative-Text"&gt;
+
+&lt;img src="Image.jpeg" width="300px" alt="Alternative-Text" longdesc="Long Description"&gt;
+                        
+&lt;img src="Image.jpeg" width="300px" alt="Alternative-Text" width="300px" longdesc="Long Description" ismap&gt;
+                        
+&lt;img src="Image.jpeg" width="300px" alt="Alternative-Text" width="300px" longdesc="Long Description" ismap sizes=""&gt;
+                        
+&lt;img src="Image.jpeg" width="300px" alt="Alternative-Text" width="300px" longdesc="Long Description" ismap sizes="" crossorigin="anonymous"&gt;
+                        
+&lt;img src="Image.jpeg" width="300px" alt="Alternative-Text" width="300px" longdesc="Long Description" ismap sizes="" crossorigin="anonymous" usemap=""&gt;
+                        
+&lt;img src="Image.jpeg" style="width: 100%;" alt="" srcset="image.jpeg 500w, image2.jpeg 1000w, image3.jpeg 1500w"&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="input">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Input Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;!-- For Simple Text --&gt;
+&lt;input type="text" name="" id="" autofocus required size="5"&gt;
+                            
+&lt;!-- For Insert Email --&gt;
+&lt;input type="email" name="" id="" placeholder="Enter Your Email" required&gt;
+                            
+&lt;!-- For Insert Password --&gt;
+&lt;input type="password" name="" id="" maxlength="20" required&gt;
+                            
+&lt;!-- For Insert Telephone No: --&gt;
+&lt;input type="tel" name="" id=""&gt;
+                            
+&lt;!-- For Date and Time --&gt;
+&lt;input type="date" name="" id=""&gt;
+                            
+&lt;!-- For MCSQs, Gender or Else --&gt;
+&lt;input type="radio" name="" id=""&gt;
+                            
+&lt;!-- For Check Box --&gt;
+&lt;input type="checkbox" name="" id="" checked&gt;
+                            
+&lt;!-- For Submit Button --&gt;
+&lt;input type="submit" name="" id=""&gt;
+                            
+&lt;!-- For Insert Time --&gt;
+&lt;input type="time" name="" id=""&gt;
+                            
+&lt;!-- For Inserting Date and Time Both --&gt;
+&lt;input type="datetime-local" name="" id=""&gt;
+                            
+&lt;!-- For Choosing Color --&gt;
+&lt;input type="color" name="" id=""&gt;
+                            
+&lt;!-- For Choosing File --&gt;
+&lt;input type="file" name="" id="" multiple&gt;
+                            
+&lt;!-- For Only Selecting Images --&gt;
+&lt;input type="file" name="" id="" accept="image/*"&gt;
+                            
+&lt;!-- For Inserting Number With Validation --&gt;
+&lt;input type="number" name="" id="" min="1" max="100" step="5"&gt;
+                            
+&lt;!-- For Inserting Number But With Bar --&gt;
+&lt;input type="range" name="" id="" min="1" max="100"&gt;
+                            
+&lt;!-- For Searching --&gt;
+&lt;input type="search" name="" id=""&gt;
+                            
+&lt;!-- For Inserting URL --&gt;
+&lt;input type="url" name="" id=""&gt;
+                            
+&lt;!-- For Reset Button --&gt;
+&lt;input type="reset" name="" id=""&gt;
+                            
+&lt;!-- For Send Image On Submit --&gt;
+&lt;input type="image" name="" id="" src="Image.jpeg"&gt;
+                            
+&lt;!-- For Long Description or Message --&gt;
+&lt;textarea name="" id="" cols="40" rows="20"&gt;&lt;/textarea&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="label">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Label Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;form action=""&gt;
+    Gender:
+    &lt;label for="male"&gt;Male&lt;/label&gt;
+    &lt;input type="radio" name="gender" id="male"&gt;
+                    
+    &lt;label for="female"&gt;Female&lt;/label&gt;
+    &lt;input type="radio" name="gender" id="female"&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="list">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Ul, Ol, Li Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;!-- Unordered List --&gt;
+&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+    &lt;li&gt;PHP&lt;/li&gt;
+&lt;/ul&gt;
+                        
+&lt;!-- Ordered List --&gt;
+&lt;ol type="1" start="10" reversed&gt;
+    &lt;li&gt;C++&lt;/li&gt;
+    &lt;li&gt;Java&lt;/li&gt;
+    &lt;li&gt;SQL&lt;/li&gt;
+    &lt;li&gt;C#&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="main">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Main Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;main&gt;
+    &lt;h2&gt;Heading&lt;/h2&gt;
+    &lt;section&gt;This is Section.&lt;/section&gt;
+    &lt;p&gt;This is Paragraph Inside Main.&lt;/p&gt;
+&lt;/main&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="mark">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Mark Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre
+                                    class="language-html"><code>&lt;p&gt;I am Sher Khan Baloch &lt;mark&gt;Founder of CodeX&lt;/mark&gt; &lt;/p&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="meter_progress">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Meter and Progress Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>Temperature: &lt;meter low="20" high="80" min="0" max="100" value="75" optimum="50"&gt;75 C&lt;/meter&gt;
+
+Downloading: &lt;progress value="30" max="100"&gt;&lt;/progress&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="nav">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Nav Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;nav&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;About Us&lt;/a&gt;
+    &lt;a href="#"&gt;Contact Us&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="noscript">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Noscript Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;script type="text/javascript"&gt;
+    document.write("CodeX");
+&lt;/script&gt;
+                    
+&lt;noscript&gt;Sorry Your Browser Does Not Support JavaScript&lt;/noscript&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="object">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Object Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre
+                                    class="language-html"><code>&lt;object data="Intro.mp4" type="video/mp4" width="400px" height="400px" name="CodeX Intro"&gt;&lt;/object&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="select_optgroup_option">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Select, Optgroup, Option Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;select name="" id="" multiple disabled&gt;
+    &lt;optgroup label="Laptops"&gt;
+        &lt;option value=""&gt;Dell&lt;/option&gt;
+        &lt;option value="" selected&gt;HP&lt;/option&gt;
+        &lt;option value=""&gt;Lenovo&lt;/option&gt;
+        &lt;option value=""&gt;Asus&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="meta">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Meta Tag (Used For SEO)</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="description" content="CodeX provide Free Code, Snippets, Cheatsheets, Projects, Notes"&gt;
+    &lt;meta name="keywords" content="Web Desgin, Computer Programming, Coding, Web Development"&gt;
+    &lt;meta name="author" content="Sher Khan Baloch"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="refresh" content="5"&gt;
+    &lt;meta name="robots" content="Index, Follow"&gt;
+    &lt;title&gt;CodeX&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="picture">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Picture and Source Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;picture&gt;
+    &lt;source media="(min-width: 650px)" srcset="Image1.jpeg"&gt;
+    &lt;source media="(min-width: 465px)" srcset="Image2.jpeg"&gt;
+    &lt;img src="Image.jpeg" alt=""&gt;
+&lt;/picture&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="pre">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Pre Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;!-- Custom Writing Style. This Tag Accepts Spaces Unlike &lt;P&gt; Tag. --&gt;
+&lt;pre&gt;
+To
+            The Head of Campus
+            SZABIST University Larkana Campus
+Subject:    Request For Adding Pre Tag In HTML Cheatsheet.
+Respected Concern,
+            We would like to add this tag in our HTML Cheatsheet in CodeX.    
+&lt;/pre&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="ruby">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Ruby, Rt, Rb Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>Hello! I am
+&lt;ruby&gt;
+    &lt;rb&gt;SKB&lt;/rb&gt;
+    &lt;rt&gt;Sher Khan Baloch&lt;/rt&gt;
+&lt;/ruby&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="section">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Section Tag (Best For SEO)</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;section&gt;
+    &lt;h2&gt;Heading&lt;/h2&gt;
+    &lt;p&gt;Paragraph&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="script">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Script Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;head&gt;
+    &lt;script type="text/javascript"&gt;
+        document.write("This CodeX is written using JavaScript.");
+    &lt;/script&gt;
+                        
+    &lt;script src="script.js" async="true"&gt;&lt;/script&gt;
+    
+    &lt;script src="script.js" defer="true"&gt;&lt;/script&gt;
+&lt;/head&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="span">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Span Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre
+                                    class="language-html"><code>&lt;p&gt;Welcome To My Website &lt;span style="background-color: maroon; color: white;"&gt;CodeX&lt;/span&gt; &lt;/p&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="style">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Style Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;head&gt;
+    &lt;style type="text/css"&gt;
+    h2 {
+        color: red;
+            font-size: 45px;
+        }     
+        p {
+            color: green;
+            font-size: 30px;
+        }
+    &lt;/style&gt;
+    
+    &lt;style type="text/css" media="print"&gt;
+        h2 {
+            color: white;
+            background-color: gray;
+            font-size: 45px;
+        }
+        p {
+            color: black;
+            font-size: 30px;
+        }
+    &lt;/style&gt;
+        
+    &lt;style type="text/css" media="screen and (max-width: 500px)"&gt;
+        h2 {
+            color: red;
+            background-color: white;
+            font-size: 50px;
+        }        
+        p {
+            color: red;
+            font-size: 40px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="sub_sup">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Sub and Sup Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;!-- Super Script --&gt;
+&lt;p&gt;I am in Class 2&lt;sup&gt;nd&lt;/sup&gt;&lt;/p&gt;
+                        
+&lt;!-- Sub Script --&gt;
+&lt;p&gt;Water Formula Is: H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="svg">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">SVG Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;svg width="100" height="100" style="border: 1px solid green;"&gt;
+    &lt;circle cx="50" cy="50" r="40" fill="yellow" stroke="red" stroke-width="5"&gt;&lt;/circle&gt;
+&lt;/svg&gt;
+                    
+&lt;svg width="100" height="100" style="border: 1px solid green;"&gt;
+    &lt;rect rx="10" x="10" y="10" width="80" height="80" fill="yellow" stroke="red" stroke-width="5"&gt;&lt;/rect&gt;
+&lt;/svg&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="table">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Table Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;head&gt;
+    &lt;style type="text/css"&gt;
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-spacing: 1px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+                    
+&lt;body&gt;
+    &lt;!-- 
+        th = Table Heading
+        tr = Table Row
+        td = Table Data / Column
+        Rowspan = Row Merge
+        Colspan = Column Merge
+    --&gt;
+
+    &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;ID&lt;/th&gt;
+                &lt;th&gt;Item&lt;/th&gt;
+                &lt;th&gt;Rate&lt;/th&gt;
+                &lt;th&gt;Remarks&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;01&lt;/td&gt;
+                &lt;td&gt;Computer&lt;/td&gt;
+                &lt;td&gt;100&lt;/td&gt;
+                &lt;td rowspan="3"&gt;Rows Merged&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;02&lt;/td&gt;
+                &lt;td&gt;Laptop&lt;/td&gt;
+                &lt;td&gt;200&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;03&lt;/td&gt;
+                &lt;td&gt;Tablet&lt;/td&gt;
+                &lt;td&gt;300&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+        &lt;tfoot&gt;
+            &lt;tr&gt;
+                &lt;td colspan="2"&gt;Grand Total&lt;/td&gt;
+                &lt;td&gt;600&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tfoot&gt;
+    &lt;/table&gt;
+&lt;/body&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="video">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Video Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre
+                                    class="language-html"><code>&lt;video width="500px" poster="Image.jpeg" controls autoplay loop muted preload="auto"&gt;
+    &lt;source src="Footage.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+                    
+&lt;video width="500px" src="Footage.mp4" poster="Image.jpeg" controls autoplay loop muted preload="auto"&gt;&lt;/video&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="shortcut">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Shortcut Icon</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;head&gt;
+    &lt;title&gt;CodeX&lt;/title&gt;
+    &lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;
+&lt;/head&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="marquee">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Marquee Tag</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-html"><code>&lt;marquee behavior="scroll"&gt;
+    &lt;h2&gt;This is Behavior attribute with Scroll &lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee behavior="alternate"&gt;
+    &lt;h2&gt;This is Behavior attribute with Alternate &lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee behavior="slide"&gt;
+    &lt;h2&gt;This is Behavior attribute with Slide &lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee direction="right"&gt;
+    &lt;h2&gt;This is Direction attribute with Right &lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee direction="left"&gt;
+    &lt;h2&gt;This is Direction attribute with left &lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee direction="up"&gt;
+    &lt;h2&gt;This is Direction attribute with Up &lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee direction="down"&gt;
+    &lt;h2&gt;This is Direction attribute with down &lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee scrollamount="50"&gt;
+    &lt;h2&gt;This is Scrollamount (Speed Control) attribute with 50&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee bgcolor="aqua"&gt;
+    &lt;h2&gt;This is Bgcolor attribute with Aqua&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee bgcolor="aqua" height="150"&gt;
+    &lt;h2&gt;This is Height attribute with 150&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee bgcolor="aqua" width="250"&gt;
+    &lt;h2&gt;This is width attribute with 250&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee loop="3"&gt;
+    &lt;h2&gt;This is Loop attribute with 3&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee scrolldelay="3"&gt;
+    &lt;h2&gt;This is ScrollDelay attribute with 3&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee bgcolor="aqua" hspace="50"&gt;
+    &lt;h2&gt;This is HSpace attribute with 50&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee bgcolor="aqua" vspace="50"&gt;
+    &lt;h2&gt;This is VSpace attribute with 50&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee bgcolor="aqua" onmouseover="this.stop()"&gt;
+    &lt;h2&gt;This is OnMouseOver attribute with this.stop() (JavScript)&lt;/h2&gt;
+&lt;/marquee&gt;
+                    
+&lt;marquee bgcolor="aqua" onmouseover="this.stop()" onmouseout="this.start()"&gt;
+    &lt;h2&gt;This is OnMouseOut attribute with this.start() (JavScript)&lt;/h2&gt;
+&lt;/marquee&gt;</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; CodeX 2024</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.min.js"></script>
+
+    <!-- Prism.js -->
+    <script src="../js/prism.js"></script>
+
+</body>
+
+</html>

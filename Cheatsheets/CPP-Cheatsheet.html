@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>C++ Cheatsheet - CodeX</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Prism.css -->
+    <link rel="stylesheet" href="../css/prism.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">CodeX</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Home -->
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Home</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Cheatsheet Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCheatsheet"
+                    aria-expanded="true" aria-controls="collapseCheatsheet">
+                    <i class="fas fa-fw fa-list-ul"></i>
+                    <span>Cheat Sheets</span>
+                </a>
+                <div id="collapseCheatsheet" class="collapse" aria-labelledby="headingCheatsheet"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Cheatsheets:</h6>
+                        <a class="collapse-item" href="HTML-Cheatsheet.html">HTML 5</a>
+                        <a class="collapse-item" href="CSS-Cheatsheet.html">CSS 3</a>
+                        <a class="collapse-item" href="JavaScript-Cheatsheet.html">JavaScript</a>
+                        <a class="collapse-item active" href="CPP-Cheatsheet.html">C++</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Notes Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNotes"
+                    aria-expanded="true" aria-controls="collapseNotes">
+                    <i class="fas fa-fw fa-book"></i>
+                    <span>Notes</span>
+                </a>
+                <div id="collapseNotes" class="collapse" aria-labelledby="headingNotes" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">PDF Notes</h6>
+                        <a class="collapse-item" href="../Notes/FoP-In-C++-Notes-By-Sher-Khan-Baloch.pdf">C++ (FoP)</a>
+                        <a class="collapse-item" href="../Notes/OOP-In-Java-Notes-By-Sher-Khan-Baloch.pdf">Java
+                            (OOP)</a>
+                        <a class="collapse-item"
+                            href="../Notes/Assembly-Language-Notes-By-Sher-Khan-Baloch.pdf">Assembly
+                            8086</a>
+                        <a class="collapse-item"
+                            href="../Notes/Database-Systems-In-SQL-Notes-By-Sher-Khan-Baloch.pdf">SQL
+                            Server</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Programs Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePrograms"
+                    aria-expanded="true" aria-controls="collapsePrograms">
+                    <i class="fas fa-fw fa-code"></i>
+                    <span>Programs</span>
+                </a>
+                <div id="collapsePrograms" class="collapse" aria-labelledby="headingPrograms"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Code Snippets</h6>
+                        <a class="collapse-item" href="../Programs/CPP-Programs.html">C++</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">0</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">No New Alerts</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">0</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Message Center
+                                </h6>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">No More Messages</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Sher Khan Baloch</span>
+                                <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <hr>
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 text-center">C++ Cheatsheet</h1>
+
+                    <hr>
+
+                    <!-- Collapsable Card Example -->
+                    <div class="card shadow mb-4">
+                        <!-- Card Header - Accordion -->
+                        <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse"
+                            role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                            <h6 class="m-0 font-weight-bold text-primary">Contents</h6>
+                        </a>
+                        <!-- Card Content - Collapse -->
+                        <div class="collapse show" id="collapseCardExample">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12">
+                                        <ol>
+                                            <li><a href="#introduction">Introduction</a></li>
+                                            <li><a href="#HelloWorld">Hello World</a></li>
+                                            <li><a href="#Variables-Input-Comments">Variables Input Comments</a></li>
+                                            <li><a href="#Arithmetic-&-Assignment-Operators">Arithmetic & Assignment
+                                                    Operators</a></li>
+                                        </ol>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <ol start="5">
+                                            <li><a href="#Relational-&-Logical-Operators">Relational & Logical
+                                                    Operators</a></li>
+                                            <li><a href="#Increment-Decrement-&-Output-Formatting">Increment Decrement &
+                                                    Output Formatting</a></li>
+                                            <li><a href="#If-Else-Condition">If Else Condition</a></li>
+                                            <li><a href="#For-and-While-Loops">For and While Loops</a></li>
+                                        </ol>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <ol start="9">
+                                            <li><a href="#Do-While-and-Array">Do While and Array</a></li>
+                                            <li><a href="#Arrays">Arrays</a></li>
+                                            <li><a href="#Bitwise-Operators">Bitwise Operators</a></li>
+                                            <li><a href="#Pointers">Pointers</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="my-3" id="introduction">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Introduction:</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>C++ is an object-oriented programming language which gives a clear structure to
+                                    programs and
+                                    allows code to be reused, lowering development costs. C++ is portable and can be
+                                    used to
+                                    develop applications that can be adapted to multiple platforms. C++ is fun and easy
+                                    to
+                                    learn!</p>
+                                <p> &#8620; Text Editiors: Visual Studio Code, Dev C++, etc.</p>
+                                <p> &#8620; Extension: Save into .cpp</p>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="HelloWorld">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">1. Hello World</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+                                using namespace std;
+
+                                int main()
+                                {
+                                    cout << "Hello C++";	
+                                    
+                                    cout << "--------------------------------------- \n";
+                                    cout << "\t\t Bio Data \n";
+                                    cout << "--------------------------------------- \n";
+                                    cout << "Name: \t\t Sher Khan Baloch. \n";
+                                    cout << "Department: \t BS Computer Science. \n";
+                                    cout << "Class: \t\t BSCS (5). \n";
+                                    cout << "Address: \t Larkana, Sindh, Pakistan. \n";
+                                    cout << "Institute: \t SZABIST University Larkana. \n";
+                                    
+                                    return 0;
+                                }
+                                                                </code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="Variables-Input-Comments">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">2. Variables Input Comments</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-cpp"><code>#include &lt;iostream&gt;
+                                using namespace std;
+
+                                int main()
+                                {
+                                    int num1;
+                                    int num2;
+                                    int sum;
+                                    
+                                    cout << "Enter First Number: ";
+                                    cin >> num1;
+                                    
+                                    cout << "Enter Second Number: ";
+                                    cin >> num2;
+                                    
+                                    sum = num1 + num2;
+                                    
+                                    cout << "Addition: " << sum;
+                                    
+                                    // This is Single Line Comment.
+                                    
+                                    /*
+                                        This is Multi Line Comment.
+                                    */
+                                    
+                                    cout << "\nData Type: Short Int, Size: " << sizeof(short int) << " Bytes";
+                                    cout << "\nData Type: Int, Size: " << sizeof(int) << " Bytes";
+                                    cout << "\nData Type: Float, Size: " << sizeof(float) << " Bytes";
+                                    cout << "\nData Type: Double, Size: " << sizeof(double) << " Bytes";
+                                    
+                                    return 0;
+                                }
+                                                            </code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="Arithmetic-&-Assignment-Operators">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">3. Arithmetic & Assignment Operators</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-cpp"><code>#include &lt;iostream&gt;
+                                using namespace std;
+
+                                int main()
+                                {
+                                    
+                                    int a, b;
+                                    int result;
+                                    
+                                    cout << "Enter First Number: ";
+                                    cin >> a;
+                                    
+                                    cout << "Enter Second Number: ";
+                                    cin >> b;
+                                    
+                                    // Arithmetic Operators
+                                    cout << "\nThe Addition of A and B is: " << a + b;
+                                    cout << "\nThe Subtraction of A and B is: " << a - b;
+                                    cout << "\nThe Multiplication of A and B is: " << a * b;
+                                    cout << "\nThe Division of A and B is: " << a / b;
+                                    
+                                    cout << "\n\n";
+                                    
+                                    // Assignment Operators
+                                    a += b;
+                                    cout << "\nThe A += B of A is: " << a;
+                                    a -= b;
+                                    cout << "\nThe A -= B of A is: " << a;
+                                    
+                                    cout << "\n\n";
+                                    
+                                    return 0;
+                                }
+                                                            
+                                                            </code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="Relational-&-Logical-Operators">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">4. Relational & Logical Operators</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-cpp"><code>#include &lt;iostream&gt;
+                                using namespace std;
+
+                                int main()
+                                {
+                                    int a = 5;
+                                    int b = 2;
+                                    int c = 1;
+                                    int d = 2;
+                                    float result;
+                                    
+                                    // Checking Precedence: (), /, *, -, + 
+                                    result = ( (a + b) - c / d + (c + d) );
+                                    
+                                    cout << "Result: " << result;
+                                    
+                                    // Relational Operators	
+                                    cout << "\n" << a << " == " << b << " = " << (a == b);
+                                    cout << "\n" << a << " > " << b << " = " << (a > b);
+                                    cout << "\n" << a << " < " << b << " = " << (a < b);
+                                    cout << "\n" << a << " >= " << b << " = " << (a >= b);
+                                    cout << "\n" << a << " <= " << b << " = " << (a <= b);
+                                    cout << "\n" << a << " != " << b << " = " << (a != b);
+                                    
+                                    // Logical Opperators
+                                    cout << "\n" <<	(a  < b ) && (a > 1);
+                                    cout << "\n" <<	(a  < b ) || (a > b);
+                                    cout << "\n" <<	!( (a  < b ) || (a > b) );
+
+                                    return 0;
+                                }
+                                                                </code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="Increment-Decrement-&-Output-Formatting">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">5. Increment Decrement & Output Formatting
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+                                #include &lt;stdio.h&gt;
+
+                                #include &lt;iomanip&gt;
+                                #include &lt;conio.h&gt;
+
+                                using namespace std;
+
+                                int main()
+                                {
+                                    int a = 30;
+                                    int b = 50;
+                                    a = a++;
+                                    b = a;
+                                    b++;
+                                    --a;
+                                    a += b;
+                                    
+                                    cout << ++b << endl;
+                                    cout << a-- << endl;
+                                    
+                                    cout << "a = " << ++a << endl;
+                                    cout << "a = " << a++ << endl;
+                                    cout << "a = " << a-- << endl;
+                                    
+                                    int i, num;
+                                    
+                                    cout << "Enter Any Number To Generate Table: ";
+                                    cin >> num;
+                                    
+                                    cout << "\nTable of " << num << " is: \n\n";
+                                    
+                                    for(i = 0; i <=10; i++)
+                                    {
+                                        cout << num << setw(3) << "*" << setw(4) << "=" << setw(4) << num * i << endl;
+                                    }
+                                    
+                                    printf("This is C Language Function.");
+                                    
+                                    int myNum;
+                                    scanf("%d", &myNum);
+                                    printf("Entered Number Is: %d", myNum);
+                                        
+                                    return 0;
+                                }
+                                                            </code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="If-Else-Condition">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">6. If Else Condition</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+                                using namespace std;
+
+                                int main()
+                                {
+                                    int a = 269;
+                                    int b = 25;
+                                    
+                                    // Bitwise Operators		
+                                    cout << (a&b) << endl;
+                                    cout << (a|b) << endl;
+                                    
+                                    int age;
+                                    cout << "Enter Your Age: ";
+                                    cin >> age;
+                                    
+                                    if(age > 0)
+                                    {
+                                        if(age >= 18)
+                                        {
+                                            cout << "You Can Cast Vote.";
+                                        }
+                                        else
+                                        {
+                                            cout << "Please Wait For To Be Turn In 18.";	
+                                        }
+                                    }
+                                    else
+                                    {
+                                        cout << "Enter Valid Age.";
+                                    }
+                                    
+                                    string userName;
+                                    string password;
+                                    
+                                    cout << "Enter User Name: ";
+                                    getline(cin, userName);
+                                    
+                                    cout << "Enter Password: ";
+                                    getline(cin, password);
+                                    
+                                    if(userName == "Sher Khan" && password == "123")
+                                    {
+                                        cout << "Welcome Mr. " << userName;
+                                    }
+                                    else
+                                    {
+                                        cout << "Enter Valid User Name or Password.";
+                                    }
+                                    
+                                    return 0;
+                                }                           
+                                                            </code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="For-and-While-Loops">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">7. For and While Loops</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-cpp"><code>#include &lt;iostream&gt;
+                                using namespace std;
+
+                                int main()
+                                {
+                                    
+                                    int a=1;
+                                    int b;
+                                    while( a<= 10)
+                                    {
+                                        
+                                        b = 1;
+                                        while(b<=a)
+                                        {
+                                            cout<<"*";
+                                            b++;
+                                        }
+                                        
+                                        a++;
+                                        cout<<"\n";
+                                        
+                                    }
+                                    
+                                    
+                                    /*
+                                    
+                                    int i,j;
+                                    for(i=1;  i <= 10;  i++)
+                                    {
+                                        for(j = 1;  j<=i;  j++)
+                                        {
+                                            cout<<"*";
+                                        }
+                                        cout<<"\n";
+                                    }
+                                    
+                                    */
+                                    
+                                    
+                                /*	
+                                    int a,t,s,e;
+                                    
+                                    cout<<"Enter any number to generate table: ";
+                                    cin>>t;
+                                    
+                                    cout<<"\nEnter number to start from table: ";
+                                    cin>>s;
+                                    
+                                    cout<<"\nEnter number to end table: ";
+                                    cin>>e;
+                                    
+                                    
+                                    for(a = s;  a <= e;  a++)
+                                    {
+                                        cout << t << " * " << a << " = " << (t*a) << endl;	
+                                    }
+                                    
+                                */	
+                                    
+                                    return 0;
+                                }
+                                                            </code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="Do-While-and-Array">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">8. Do While and Array</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+                                using namespace std;
+
+                                int main()
+                                {
+                                    // Do While Loop
+                                    int a = 1;
+                                    do
+                                    {
+                                        cout << a << endl;
+                                        a++;
+                                        // a = a + 2;
+                                    } while(a <= 10);
+
+                                    // Custom Series: 1 3 4 6 8 9 10
+                                    for(int i = 1; i <= 10; i++)
+                                    {
+                                        if(i == 2 || i == 5 || i == 7)
+                                        {
+                                            continue;
+                                        }
+                                        else
+                                        {
+                                            cout << i << " ";
+                                        }
+                                    }
+                                    
+                                    // Escape Every 4 Number (Method 01)
+                                    int count = 0;
+                                    for(int j = 1; j <= 50; j++)
+                                    {
+                                        count++;
+                                        
+                                        if(count == 4)
+                                        {
+                                            count = 0;
+                                        }
+                                        else
+                                        {
+                                            cout << j << " ";
+                                        }
+                                    }
+                                    
+                                    // Escape Every 4 Number (Method 02)
+                                    for(int a = 1; a <= 50; a++)
+                                    {
+                                        if(a%4 == 0)
+                                        {
+                                            continue;
+                                        }
+                                        cout << a << " ";
+                                    }
+                                    
+                                    // Array
+                                    int arr[10];
+                                    arr[0] = 11;
+                                    arr[1] = 22;
+                                    arr[2] = 33;
+                                    arr[3] = 44;
+                                    arr[4] = 55;
+                                    arr[5] = 66;
+                                    arr[6] = 77;
+                                    arr[7] = 88;
+                                    arr[8] = 99;
+                                    arr[9] = 100;
+                                    
+                                    cout << arr[2];
+                                    cout << arr[6];
+                                    cout << arr[9];
+                                    
+                                    int index;
+                                    for(index = 0; index < 10; index++)
+                                    {
+                                        cout << arr[index] << endl;
+                                        cout << "arr[" << index << "]" << " = " << arr[index] << endl;
+                                    }
+                                    
+                                    int size;
+                                    cout << "Enter Array Size: ";
+                                    cin >> size;
+                                    
+                                    int arr[size];
+                                    
+                                    int index;
+                                    
+                                    // For Input In Array
+                                    for(index = 0; index < size; index++)
+                                    {
+                                        cout << "Enter Value at Array [" << index << "] = ";
+                                        cin >> arr[index];
+                                        cout << endl;
+                                    }
+                                    
+                                    // For Printing Array
+                                    for(index = 0; index < size; index++)
+                                    {
+                                        cout << arr[index] << endl;
+                                    }
+                                    
+                                    // Size of Array
+                                    int length = sizeof(arr)/sizeof(arr[0]);
+                                    int length = sizeof(arr)/sizeof(arr[0])-1;
+                                    cout << length;
+                                    
+                                    return 0;
+                                }
+                                                            </code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="Arrays">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">9. Arrays</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+                                using namespace std;
+
+                                int main()
+                                {
+                                    /*
+                                    int numbers[5] = {3, 7, 12, 24, 45};
+                                    // Result: 3 7 12 24 45
+                                    
+                                    int numbers[] = {3, 7, 12, 24, 45};
+                                    // Result: 3 7 12 24 45
+
+                                    int numbers[5] = {3, 7};
+                                    // Result: 3 7 0 0 0
+                                    
+                                    int numbers[1000] = {0};
+                                    // Result: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+                                    
+                                    for(int i = 0; i < sizeof(numbers)/sizeof(numbers[0]); i++)
+                                    {
+                                        cout << numbers[i] << " ";
+                                    }
+                                    */
+                                    
+                                    const int size = 5;
+                                    
+                                    int arr[size];
+                                    
+                                    for(int i = 0; i < size; i++)
+                                    {
+                                        arr[i] = i * i;
+                                    }
+                                    
+                                    cout << "Elements \t Square" << endl;
+                                    cout << "=========\t=======" << endl;
+                                    
+                                    for(int i = 0; i < size; i++)
+                                    {
+                                        cout << i << "\t\t";
+                                        cout << arr[i] << endl;
+                                    }
+                                    
+                                    /*
+                                    Elements         Square
+                                    =========       =======
+                                    0               0
+                                    1               1
+                                    2               4
+                                    3               9
+                                    4               16
+                                    */
+                                    
+                                    return 0; 
+                                }
+                                                            </code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="Bitwise-Operators">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">10. Bitwise Operators</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+                                using namespace std;
+
+                                int main()
+                                {
+                                    int a = 20;
+                                    int b = 50;
+                                    int c = 40;
+                                    int res;
+                                    
+                                    /*
+                                    AND &
+                                    
+                                        128		64		32		16		8		4		2		1
+                                    
+                                a =		0		0		0		1		0		1		0		0
+                                b =		0		0		1		1		0		0		1		0
+                                        ---------------------------------------------------------
+                                a&b		0		0		0		1		0		0		0		0
+                                c =		0		0		1		0		1		0		0		0
+                                        ---------------------------------------------------------
+                                (a&b)&c 0		0		0		0		0		0		0		0
+                                    
+                                    Add Those Numbers Where Bit is 1
+                                    */
+                                    
+                                    res = ((a & b) & c);
+                                    cout << res << endl;
+                                    
+                                    /*
+                                    OR |
+                                    
+                                        128		64		32		16		8		4		2		1
+                                    
+                                a =		0		0		0		1		0		1		0		0
+                                b =		0		0		1		1		0		0		1		0
+                                        ---------------------------------------------------------
+                                a|b 	0		0		1		1		0		1		1		0
+                                c =		0		0		1		0		1		0		0		0
+                                        ---------------------------------------------------------
+                                (a|b)&c	0		0		1		0		0		0		0		0
+                                    
+                                    */
+                                    res = ((a | b) & c);
+                                    cout << res << endl;
+                                    
+                                    a = 10;
+                                    /*
+                                    Shift Left	<<
+                                        128		64		32		16		8		4		2		1
+                                a =		0		0		0		0		1		0		1		0
+                                        ---------------------------------------------------------
+                                a<<2	0		0		1		0		1		0		0		0
+
+                                    */
+                                    res = (a << 2);	
+                                    cout << res << endl;
+                                    
+                                    int x = 10;
+                                    int y = 5;
+                                    cout << (x << y) << endl;
+                                    
+                                    a = 10;
+                                    /*
+                                    Shift Right	>>
+                                        128		64		32		16		8		4		2		1
+                                a =		0		0		0		0		1		0		1		0
+                                        ---------------------------------------------------------
+                                a>>2	0		0		0		0		0		0		1		0		0						
+
+                                    */
+                                    res = (a >> 2);	
+                                    cout << res << endl;
+                                    
+                                    a = 10;
+                                    b = 40;
+                                    /*	
+                                    XOR ^
+                                    
+                                        128		64		32		16		8		4		2		1
+                                    
+                                a =		0		0		0		0		1		0		1		0
+                                b =		0		0		1		0		1		0		0		0
+                                        ---------------------------------------------------------
+                                a^b 	0		0		1		0		0		0		1		0
+                                    
+                                    */
+                                    res = (a ^ b);
+                                    cout << res << endl;
+                                    
+                                    
+                                    return 0;
+                                }
+                                                            </code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3" id="Pointers">
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">11. Pointers</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre class="language-cpp"><code>#include &lt;iostream&gt;
+
+                                using namespace std;
+
+                                int main()
+                                {
+                                    int x = 10;
+                                    
+                                    // Ways of Declaring Pointer
+                                    // int *a;
+                                    int* a;
+                                    
+                                    cout << "The Value of X = " << x << endl;
+                                    cout << "The Address of X = " << &x << endl;
+                                    
+                                    a = &x;
+                                    
+                                    cout << "The Value of A = " << a << endl;
+                                    cout << "The Address of A = " << &a << endl;
+                                    
+                                    // We Are Getting X Value of By Pointer
+                                    cout << "The Value of *A = " << *a << endl;
+                                    
+                                    return 0;
+                                }
+                                                            </code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+
+
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; CodeX 2024</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.min.js"></script>
+
+    <!-- Prism.js -->
+    <script src="../js/prism.js"></script>
+
+</body>
+
+</html>

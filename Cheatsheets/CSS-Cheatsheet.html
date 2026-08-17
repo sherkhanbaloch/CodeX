@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CSS Cheatsheet - CodeX</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Prism.css -->
+    <link rel="stylesheet" href="../css/prism.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">CodeX</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Home -->
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Home</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Cheatsheet Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCheatsheet"
+                    aria-expanded="true" aria-controls="collapseCheatsheet">
+                    <i class="fas fa-fw fa-list-ul"></i>
+                    <span>Cheat Sheets</span>
+                </a>
+                <div id="collapseCheatsheet" class="collapse" aria-labelledby="headingCheatsheet"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Cheatsheets:</h6>
+                        <a class="collapse-item" href="HTML-Cheatsheet.html">HTML 5</a>
+                        <a class="collapse-item active" href="CSS-Cheatsheet.html">CSS 3</a>
+                        <a class="collapse-item" href="JavaScript-Cheatsheet.html">JavaScript</a>
+                        <a class="collapse-item" href="CPP-Cheatsheet.html">C++</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Notes Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNotes"
+                    aria-expanded="true" aria-controls="collapseNotes">
+                    <i class="fas fa-fw fa-book"></i>
+                    <span>Notes</span>
+                </a>
+                <div id="collapseNotes" class="collapse" aria-labelledby="headingNotes" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">PDF Notes</h6>
+                        <a class="collapse-item" href="../Notes/FoP-In-C++-Notes-By-Sher-Khan-Baloch.pdf">C++ (FoP)</a>
+                        <a class="collapse-item" href="../Notes/OOP-In-Java-Notes-By-Sher-Khan-Baloch.pdf">Java
+                            (OOP)</a>
+                        <a class="collapse-item"
+                            href="../Notes/Assembly-Language-Notes-By-Sher-Khan-Baloch.pdf">Assembly
+                            8086</a>
+                        <a class="collapse-item"
+                            href="../Notes/Database-Systems-In-SQL-Notes-By-Sher-Khan-Baloch.pdf">SQL
+                            Server</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Programs Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePrograms"
+                    aria-expanded="true" aria-controls="collapsePrograms">
+                    <i class="fas fa-fw fa-code"></i>
+                    <span>Programs</span>
+                </a>
+                <div id="collapsePrograms" class="collapse" aria-labelledby="headingPrograms"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Code Snippets</h6>
+                        <a class="collapse-item" href="../Programs/CPP-Programs.html">C++</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">0</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">No New Alerts</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">0</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Message Center
+                                </h6>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">No More Messages</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Sher Khan Baloch</span>
+                                <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <hr>
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 text-center">CSS Cheatsheet</h1>
+
+                    <hr>
+
+                    <!-- Collapsable Card Example -->
+                    <div class="card shadow mb-4">
+                        <!-- Card Header - Accordion -->
+                        <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse"
+                            role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                            <h6 class="m-0 font-weight-bold text-primary">Contents</h6>
+                        </a>
+                        <!-- Card Content - Collapse -->
+                        <div class="collapse show" id="collapseCardExample">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12">
+                                        <ol>
+                                            <li><a href="#introduction">Introduction</a></li>
+                                            <li><a href="#color">Color Property</a></li>
+                                            <li><a href="#background">Background Property</a></li>
+                                            <li><a href="#border">Border Property</a></li>
+                                            <li><a href="#text">Text Property</a></li>
+                                            <li><a href="#font">Font Property</a></li>
+                                            <li><a href="#text_decoration">Text Decoration Property</a></li>
+                                        </ol>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <ol start="8">
+                                            <li><a href="#link">Link Style Property</a></li>
+                                            <li><a href="#list">List Style Property</a></li>
+                                            <li><a href="#table">Table Style Property</a></li>
+                                            <li><a href="#overflow">Overflow Property</a></li>
+                                            <li><a href="#position">Position Property</a></li>
+                                            <li><a href="#display">Display Property</a></li>
+                                            <li><a href="#cursor">Cursor Property</a></li>
+                                        </ol>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <ol start="15">
+                                            <li><a href="#visibility">Visibility Property</a></li>
+                                            <li><a href="#float">Float Property</a></li>
+                                            <li><a href="#z_index">Z-Index Property</a></li>
+                                            <li><a href="#box_shadow">Box Shadow Property</a></li>
+                                            <li><a href="#selectors">Selectors</a></li>
+                                            <li><a href="#pseudo_classes">Pseudo Classes</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="my-3" id="introduction">
+
+                        <!-- Introduction Card -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Introduction:</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Cascading Style Sheet also known as CSS is used to design Web Pages or Websites.</p>
+                                <p> &#8620; CSS saves time.</p>
+                                <p> &#8620; Helps the page load faster.</p>
+                                <p> &#8620; Easy to maintain.</p>
+                                <p> &#8620; Independent platform.</p>
+                                <p> &#8620; Extension: Save into .css</p>
+                            </div>
+                        </div>
+
+                        <!-- Types of CSS Card -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Types of CSS:</h5>
+                            </div>
+
+                            <div class="card-body">
+
+                                <!-- Inline CSS -->
+                                <h3>I. Inline CSS:</h3>
+
+                                <pre
+                                    class="language-html"><code>&lt;h1 style="color: white; background-color: red;"&gt;This is Heading one.&lt;/h1&gt;</code></pre>
+
+
+                                <!-- Internal CSS -->
+                                <h3>II. Internal CSS:</h3>
+
+                                <pre class="language-html"><code>&lt;head&gt;
+&lt;title&gt;CodeX&lt;/title&gt;
+&lt;style type="text/css"&gt;
+    h1{
+        color: white;
+        background-color: red;
+    }
+&lt;/style&gt;
+&lt;/head&gt;</code></pre>
+
+
+                                <!-- External CSS -->
+                                <h3>III. External CSS:</h3>
+
+                                <pre class="language-html"><code>&lt;head&gt;
+&lt;title&gt;CodeX&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;
+&lt;/head&gt;</code></pre>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="color">
+
+                        <!-- Color Properties Card -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">1. Color Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <pre class="language-css"><code>h1 {
+color: white;
+color: rgb(255, 0, 0);
+color: rgba(255, 0, 0, 0.5); /* Alpha (Transparent) can be used from 0 to 1 */
+}</code></pre>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="background">
+
+                        <!-- Background Properties Card -->
+                        <div class="card shadow mb-4">
+
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">2. Background Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+
+                                <pre class="language-css"><code>body {
+    /* 1. Background Color */
+    background-color: #00ff00;
+    background-color: red;
+    background-color: rgb(255, 0, 0);
+
+    /* 2. Background Image */
+    background-image: url("images/bg.png");
+
+    /* 3. Background Position */
+    background-position: top;
+    background-position: right;
+    background-position: left;
+    background-position: bottom;
+    background-position: center;
+
+    /*4. Background Repeat */
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: round;
+    background-repeat: space;
+
+    /* 5. Background Size */
+    background-size: auto;
+    background-size: cover;
+    background-size: contain;
+
+    /* 6. Background Origin */
+    background-origin: padding-box;
+    background-origin: border-box;
+    background-origin: content-box;
+
+    /* 7. Background Clip */
+    background-clip: padding-box;
+    background-clip: border-box;
+    background-clip: content-box;
+
+    /* 8. Background Attachment */
+    background-attachment: scroll;
+    background-attachment: fixed;
+    background-attachment: local;
+
+    /* 9. Background Blend Mode */
+    background-blend-mode: multiply;
+    background-blend-mode: screen;
+    background-blend-mode: luminosity;
+    background-blend-mode: overlay;
+    background-blend-mode: darken;
+    background-blend-mode: lighten;
+    background-blend-mode: color-dodge;
+    background-blend-mode: saturation;
+}</code></pre>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="border">
+
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">3. Border Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <pre class="language-css"><code>div {
+    height: 300px;
+    width: 300px;
+
+    /* 1. Border Style*/
+    border-style: solid;
+    border-style: dotted;
+    border-style: dashed;
+    border-style: double;
+    border-style: groove;
+    border-style: hidden;
+    border-style: ridge;
+    border-style: inset;
+    border-style: outset;
+    border-top-style: dotted;
+
+    /* 2. Border Width*/
+    border-width: thin;
+    border-width: thick;
+    border-width: medium;
+    border-top-width: thin;
+
+    /* 3. Border Color*/
+    border-color: red;
+    border-top-color: blue;
+
+    /* 4. Border Radius*/
+    border-radius: 10px;
+
+    /* 5. Border Collapse*/
+    border-collapse: separate;
+    border-collapse: collapse;
+
+    /* 6. Border Image*/
+    border-image-source: url("images/arrow.png");
+    border-image-slice: 30;
+    border-image-width: 10px;
+    border-image-outset: 20px;
+
+    border-image-repeat: round;
+    border-image-repeat: stretch;
+    border-image-repeat: space;
+    border-image-repeat: repeat;
+
+    /* Shortcut Writing */
+    border-image: url("images/arrow.png") 30 10px 20px round;
+
+    /* border-image generator (FireFox Browser Only.) */
+}</code></pre>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="text">
+
+                        <!-- Text Properties Card -->
+                        <div class="card shadow mb-4">
+
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">4. Text Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+
+                                <pre class="language-css"><code>h1 {
+    /* 1. Text Color */
+    color: red;
+
+    /* 2. Letter Spacing */
+    letter-spacing: 5px;
+
+    /* 3. Word Spacing */
+    word-spacing: 20px;
+
+    /* 4. Text Indent (First Line Before Space Like DAWN Newspaper) */
+    text-indent: 20px;
+
+    /* 5. Text Align */
+    text-align: left;
+    text-align: right;
+    text-align: center;
+    text-align: justify;
+
+    /* 6. Text Decoration */
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: none;
+
+    /* 7. Text Transform */
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+
+    /* 8. Text Shadow */
+    /* Text Shadow: Horizental    Vertical   Blur    Color; */
+    text-shadow: 2px 2px 4px gray;
+}</code></pre>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="font">
+
+                        <!-- Font Properties Card -->
+                        <div class="card shadow mb-4">
+
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">5. Font Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <pre class="language-css"><code>h1 {
+    /* If Font Name Contains More Than One Words Then Use Like This: "Times New Roman"*/
+    font-family: Arial;
+
+    font-style: italic;
+    font-style: oblique;
+
+    font-weight: bold;
+
+    /* All Fonts In Capital */
+    font-variant: small-caps;
+
+    /* Space Between Lines */
+    line-height: 100px;
+
+    font-size: 100px;
+
+    /* One Line Code: Shortcut */
+    /* font: style      variant     weight      size/line       height    family */
+    font: italic small-caps bolder 100px/100px Arial;
+}</code></pre>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="text_decoration">
+
+                        <!-- Text Decoration Properties Card -->
+                        <div class="card shadow mb-4">
+
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">6. Text Decoration Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <pre class="language-css"><code>h1 {
+    /* 1. Text Decoration Line */
+    text-decoration-line: underline;
+    text-decoration-line: overline;
+    text-decoration-line: line-through;
+    text-decoration-line: none;
+
+    /* 2. Text Decoration Color */
+    text-decoration-color: red;
+    text-decoration-color: #ff00cc;
+    text-decoration-color: rgb(255, 255, 0);
+    text-decoration-color: rgb(255, 255, 0, 0.2);
+
+    /* 3. Text Decoration Style */
+    text-decoration-style: solid;
+    text-decoration-style: dotted;
+    text-decoration-style: dashed;
+    text-decoration-style: double;
+    text-decoration-style: wavy;
+
+    /* 4. Text Decoration Thickness */
+    text-decoration-thickness: 10px;
+    /* Supported By FireFox and Safari Only. */
+}</code></pre>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="link">
+
+                        <!-- Link Style Properties Card -->
+                        <div class="card shadow mb-4">
+
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">7. Link Style Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <pre class="language-css"><code>a:link {
+    color: red;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: blue;
+}
+                        
+a:hover {
+    color: white;
+    background-color: black;
+}</code></pre>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="list">
+
+                        <!-- List Style Properties Card -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">8. List Style Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <pre class="language-css"><code>ul {
+    list-style-type: disc;
+    list-style-type: circle;
+    list-style-type: square;
+    list-style-type: none;
+}
+                        
+ol {
+    list-style-type: decimal;
+    list-style-type: decimal-leading-zero;
+    list-style-type: upper-alpha;
+    list-style-type: lower-alpha;
+    list-style-type: upper-roman;
+    list-style-type: lower-roman;
+}
+
+ul {
+    list-style-position: outside;
+    list-style-position: inside;
+}
+
+ul {
+    list-style-image: url("images/arrow.png");
+}</code></pre>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="table">
+
+                        <!-- Table Style Properties Card -->
+                        <div class="card shadow mb-4">
+
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">9. Table Style Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <pre class="language-css"><code>table {
+    width: 100%;
+    padding: 5px 10px;
+}
+                        
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: separate;  /* Default */
+    border-collapse: collapse;  /* Remove Border Spaces */
+
+    border-spacing: 5px 10px;    /* 5px For Column and 10px For Row */
+    
+    empty-cells: show;
+    empty-cells: hide;
+
+    table-layout: auto;
+    table-layout: fixed;
+}
+
+td {
+    vertical-align: top;
+    vertical-align: bottom;
+    vertical-align: middle;
+}
+
+caption {
+    caption-side: top;
+    caption-side: bottom;
+}
+
+tr:hover {
+    background-color: gray;
+}
+
+tr:nth-child(even) {
+    color: white;
+    background-color: green;
+}</code></pre>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="overflow">
+
+                        <!-- Overflow Properties Card -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">10. Overflow Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <pre class="language-css"><code>div {
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}</code></pre>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="position">
+
+                        <!-- Position Properties Card -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">11. Position Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <pre class="language-css"><code>div {
+    position: relative;
+    position: absolute; /* Most Used and Helpful Than Others */
+    position: sticky;
+    position: static;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}</code></pre>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="display">
+
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">12. Display Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <pre class="language-css"><code>div {
+    display: none;
+    display: inline;
+    display: block;
+    display: inline-block;
+    display: list-item;
+    display: initial;
+    display: inherit;
+    display: contents;
+    display: flex;
+    display: inline-flex;
+    display: grid;
+    display: inline;
+    display: table;
+    display: inline-table;
+    display: table-caption;
+    display: table-column-group;
+    display: table-header-group;
+    display: table-footer-group;
+    display: table-row-group;
+    display: table-cell;
+    display: table-column;
+    display: table-row;
+    display: run-in;
+}</code></pre>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="cursor">
+
+                        <!-- Cursor Properties Card -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">13. Cursor Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <pre class="language-css"><code>div {
+    cursor: alias;
+    cursor: context-menu;
+    cursor: all-scroll;
+    cursor: auto;
+    cursor: cell;
+    cursor: col-resize;
+    cursor: copy;
+    cursor: crosshair;
+    cursor: default;
+    cursor: e-resize;
+    cursor: ew-resize;
+    cursor: grab;
+    cursor: grabbing;
+    cursor: help;
+    cursor: move;
+    cursor: n-resize;
+    cursor: ne-resize;
+    cursor: nesw-resize;
+    cursor: ns-resize;
+    cursor: nw-resize;
+    cursor: nwse-resize;
+    cursor: no-drop;
+    cursor: none;
+    cursor: not-allowed;
+    cursor: pointer;
+    cursor: progress;
+    cursor: row-resize;
+    cursor: s-resize;
+    cursor: se-resize;
+    cursor: sw-resize;
+    cursor: text;
+    cursor: url("images/arrow.jpg");
+    cursor: w-resize;
+    cursor: wait;
+    cursor: zoom-in;
+    cursor: zoom-out;
+}</code></pre>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="visibility">
+
+                        <!-- Visibility Properties Card -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">14. Visibility Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <pre class="language-css"><code>div {
+    visibility: hidden;
+    visibility: visible;
+    visibility: collapse;
+}</code></pre>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="float">
+
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">15. Float Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <pre class="language-css"><code>div {
+    float: right; /* Adjustment From Right */
+    float: left; /* Adjustment From Left */
+}</code></pre>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="z_index">
+
+                        <!-- Z-Index Properties Card -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">16. Z-Index Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <pre class="language-css"><code>div {
+   z-index: auto;
+   z-index: 1;
+   z-index: 2;
+   z-index: -1; /* If We Use -1 Then It Will Be In Background Side. */
+}</code></pre>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="box_shadow">
+
+                        <!-- Basic Card Example -->
+                        <div class="card shadow mb-4">
+
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">17. Box Shadow Properties</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <pre class="language-css"><code>div {
+    /* Box Shadow: Horizental   Vertical    Blur    Spread      Color  */
+    box-shadow: 2px 2px 3px 5px gray;
+
+    /* If We Use Values In Minus Then It Will Be Applied For Upperside.  */
+    box-shadow: -2px -2px 3px 5px gray;
+}</code></pre>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="selectors">
+
+                        <!-- CSS Selectors Card -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">18. CSS Selectors</h5>
+                            </div>
+
+                            <div class="card-body">
+
+                                <!-- Simple Selectors -->
+                                <h4>1. Simple Selectors</h4>
+
+                                <ol type="i">
+                                    <li>
+                                        Element Selector:
+                                        <pre class="language-css"><code>h1 {
+    /* Code */
+}
+
+p {
+    /* Code */
+}
+
+span {
+    /* Code */
+}</code></pre>
+                                    </li>
+
+                                    <li>
+                                        ID Selector:
+                                        <pre class="language-css"><code>#navbar {
+    /* Code */
+}</code></pre>
+                                    </li>
+
+                                    <li>
+                                        Class Selector:
+                                        <pre class="language-css"><code>.navbar {
+    /* Code */
+}</code></pre>
+                                    </li>
+
+                                    <li>
+                                        Universal Selector:
+                                        <pre class="language-css"><code>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}</code></pre>
+                                    </li>
+
+                                    <li>
+                                        Grouping Selector:
+                                        <pre class="language-css"><code>h1,
+p,
+span {
+    /* Code */
+}</code></pre>
+                                    </li>
+                                </ol>
+
+
+                                <!-- Combinator Selectors -->
+                                <h4>2. Combinator Selectors</h4>
+
+                                <ol type="i">
+                                    <li>Descendent Selectors (Space)</li>
+                                    <li>Child Selectors (&gt;)</li>
+                                    <li>Adjacent Sibling Selectors (+)</li>
+                                    <li>General Sibling Selectors (~)</li>
+                                </ol>
+
+
+                                <!-- Attribute Selectors -->
+                                <h4>3. Attribute Selectors</h4>
+
+                                <pre class="language-css"><code>input[type="text"] {
+    border: 2px solid red;
+}</code></pre>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="my-3" id="pseudo_classes">
+
+                        <!-- Pseudo Classes Card -->
+                        <div class="card shadow mb-4">
+
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">19. Pseudo Classes</h5>
+                            </div>
+
+                            <div class="card-body">
+
+                                <h4>Link</h4>
+
+                                <pre class="language-css"><code>a:link {
+    /* Code */
+}
+
+a:hover {
+    /* Code */
+}
+
+a:visited {
+    /* Code */
+}
+
+a:active {
+    /* Code */
+}
+
+a:target {
+    /* Code */
+}</code></pre>
+
+
+                                <h4>Common Used</h4>
+
+                                <pre class="language-css"><code>div p:first-child {
+    /* Code */
+}
+
+div p:last-child {
+    /* Code */
+}
+
+div p:nth-child(even) {
+    /* Code */
+}
+
+div p:nth-child(odd) {
+    /* Code */
+}
+
+div p:nth-last-child(even) {
+    /* Code */
+}
+
+div p:nth-of-type(even) {
+    /* Code */
+}
+
+div p:nth-last-of-type() {
+    /* Code */
+}
+
+div p:nth-last-child(even) {
+    /* Code */
+}
+
+div p:only-child {
+    /* Code */
+}
+
+div p:only-of-type {
+    /* Code */
+}
+
+div p:empty {
+    /* Code */
+}
+
+div p:not() {
+    /* Code */
+}
+
+div p:lang() {
+    /* Code */
+}</code></pre>
+
+
+                                <h4>Form Used</h4>
+
+                                <pre class="language-css"><code>input:focus {
+    /* Code */
+}
+
+input:checked {
+    /* Code */
+}
+
+input:disabled {
+    /* Code */
+}
+
+input:enabled {
+    /* Code */
+}
+
+input:required {
+    /* Code */
+}
+
+input:optional {
+    /* Code */
+}
+
+input:in-range {
+    /* Code */
+}
+
+input:out-of-range {
+    /* Code */
+}
+
+input:read-only {
+    /* Code */
+}
+
+input:read-write {
+    /* Code */
+}
+
+input:valid {
+    /* Code */
+}
+
+input:invalid {
+    /* Code */
+}
+
+input:default {
+    /* Code */
+}</code></pre>
+
+
+                                <h4>Variables</h4>
+
+                                <h5>:Root</h5>
+
+                                <ul>
+                                    <li>The :root class is used to define variables in CSS.</li>
+                                    <li>A variable is a data container that stores data and it is defined by :root
+                                        class.</li>
+                                </ul>
+
+                                <pre class="language-css"><code>:root {
+    --bgcolor: orange;
+}
+
+body {
+    background-color: var(--bgcolor);
+}
+
+div {
+    background-color: var(--bgcolor);
+}</code></pre>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; CodeX 2024</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.min.js"></script>
+
+    <!-- Prism.js -->
+    <script src="../js/prism.js"></script>
+
+</body>
+
+</html>
